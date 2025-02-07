@@ -12,15 +12,26 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
                 </li>
+                @guest
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Login</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{route("registrazione")}}">Registrati</a></li>
-                        <li><a class="dropdown-item" href="#">Accedi</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                        <li><a class="dropdown-item" href="{{route("register")}}">Registrati</a></li>
+                        <li><a class="dropdown-item" href="{{route("login")}}">Accedi</a></li>
                     </ul>
                 </li>
+                @else 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ciao {{Auth::user()->name}}</a>
+                    <ul class="dropdown-menu dropdown-logout">
+                        <li><a class="dropdown-item text-white" href="">Profilo</a></li>
+                        <form action="{{route("logout")}}" method="POST">
+                            @csrf
+                            <button type="submit" class="btn btn-danger">logout</button>
+                        </form>
+                    </ul>
+                </li>
+                @endguest
             </ul>
         </div>
     </div>
