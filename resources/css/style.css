@@ -22,7 +22,12 @@ body{
 h1{
     font-family: var(--font-primary);
 }
-
+/* Button in generale */
+.btn-custom{
+    background-color: var(--accent);
+    color: var(black);
+    font-weight:600;
+}
 /* Navbar */
 
 .text-tasky{
@@ -60,8 +65,3 @@ h1{
 } */
 /* Fine Navbar */
 
-/* Button in generale */
-.btn-custom{
-    background-color: var(--accent);
-    color: var(black);
-}
