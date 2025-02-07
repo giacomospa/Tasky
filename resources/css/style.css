@@ -1,3 +1,67 @@
+/* Palette colori */
+:root {
+    --primary: rgb(36, 35, 49);
+    --secondary: rgba(244, 246, 245);
+    --accent: rgba(229, 99, 153);
+}
+/* Fonts */
+:root{
+    --font-primary: "Orbitron", serif;
+    --font-secondary: "Montserrat", serif;
+}
+
+/* Basic */
+
+body{
+    overflow-x: hidden;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-family: var(--font-secondary);
+}
+
 h1{
-    color: aquamarine;
+    font-family: var(--font-primary);
+}
+
+/* Navbar */
+
+.text-tasky{
+    color: var(--accent);
+    font-weight: 600;
+    font-style:oblique;
+    font-size: 1.3rem;
+}
+.text-tasky:hover{
+    color: var(--secondary);
+}
+.nav-link{
+    color: var(--secondary);
+}
+
+.nav-link:hover{
+    color: var(--accent);
+}
+
+.nav-link:active, 
+.nav-link:focus {
+    color: var(--secondary) !important; 
+}
+
+/* 
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar-toggler:focus, 
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+    border-color: rgb(255, 237, 235) ;
+} */
+/* Fine Navbar */
+
+/* Button in generale */
+.btn-custom{
+    background-color: var(--accent);
+    color: var(black);
 }
