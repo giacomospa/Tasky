@@ -24,7 +24,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ciao {{Auth::user()->name}}</a>
                     <ul class="dropdown-menu dropdown-custom">
-                        <li><a class="dropdown-item text-white align-items-center text-end" href="">Profilo</a></li>
+                        <li><a class="dropdown-item text-white align-items-center text-end" href="{{route("user.profile")}}">Profilo</a></li>
                         <form action="{{route("logout")}}" method="POST" class="d-flex justify-content-end">
                             @csrf
                             <button type="submit" class="btn btn-danger mt-2">logout</button>

@@ -20,9 +20,8 @@ class PublicController extends Controller implements HasMiddleware
         return view("welcome");
     }
 
-    // public function register(){
-    //     return view("auth.register");
-        
-    // }
+    public function userProfile(){
+        return view("auth.profile");
+    }
 }
 
