@@ -31,6 +31,8 @@ class CreateNewUser implements CreatesNewUsers
             'password' => $this->passwordRules(),
             'gender' => ["required","in:male,female,other"]
         ])->validate();
+        
+        session()->flash('status', 'Congratulazioni, profilo creato con successo!');
 
         return User::create([
             'name' => $input['name'],
@@ -38,5 +40,6 @@ class CreateNewUser implements CreatesNewUsers
             'password' => Hash::make($input['password']),
             'gender'=> $input['gender']
         ]);
+
     }
 }

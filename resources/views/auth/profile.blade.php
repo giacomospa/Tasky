@@ -13,6 +13,13 @@
                 </h1>
             </div>
             <div class="col-12 d-flex justify-content-center">
+                {{-- Messaggio di Successo --}}
+                @if (session('status'))
+                <div class="alert alert-success">
+                    {{ session('status') }}
+                </div>
+                @endif
+                {{-- Messaggio di Errore --}}
                 @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul>
