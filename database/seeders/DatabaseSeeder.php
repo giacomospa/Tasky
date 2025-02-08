@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
         DB::table("services")->insert([
             "name"=>$service["name"],
             "description"=>$service["description"],
-            "img"=>$service["img"],
+            "img"=>$service["service.jpg"],
             "price"=>$service["price"],
             "user_id"=>$user->id
         ]);
