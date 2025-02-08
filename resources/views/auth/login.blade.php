@@ -2,7 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12 d-flex justify-content-center mt-5">
-                <h1>Accedi al tuo Account Tasky</h1>
+                <h1>Accedi tuo Account Tasky</h1>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
                 @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul>

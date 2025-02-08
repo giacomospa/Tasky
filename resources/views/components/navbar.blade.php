@@ -15,19 +15,19 @@
                 @guest
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Login</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{route("register")}}">Registrati</a></li>
-                        <li><a class="dropdown-item" href="{{route("login")}}">Accedi</a></li>
+                    <ul class="dropdown-menu dropdown-custom">
+                        <li><a class="dropdown-item text-white" href="{{route("register")}}">Registrati</a></li>
+                        <li><a class="dropdown-item text-white" href="{{route("login")}}">Accedi</a></li>
                     </ul>
                 </li>
                 @else 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ciao {{Auth::user()->name}}</a>
-                    <ul class="dropdown-menu dropdown-logout">
-                        <li><a class="dropdown-item text-white" href="">Profilo</a></li>
-                        <form action="{{route("logout")}}" method="POST">
+                    <ul class="dropdown-menu dropdown-custom">
+                        <li><a class="dropdown-item text-white align-items-center text-end" href="">Profilo</a></li>
+                        <form action="{{route("logout")}}" method="POST" class="d-flex justify-content-end">
                             @csrf
-                            <button type="submit" class="btn btn-danger">logout</button>
+                            <button type="submit" class="btn btn-danger mt-2">logout</button>
                         </form>
                     </ul>
                 </li>

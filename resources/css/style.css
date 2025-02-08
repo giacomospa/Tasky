@@ -56,11 +56,21 @@ h1{
     filter: invert(1);
 }
 
-.navbar-toggler:focus, 
+/* .navbar-toggler:focus, 
 .navbar-toggler:active {
     outline: none;
     box-shadow: none;
     border-color: rgb(255, 237, 235) ;
-} 
+}  */
 
+.dropdown-custom {
+    background-color: transparent !important;
+    border: none;  
+    box-shadow: none;  
+}
+
+.dropdown-item:hover {
+    background-color: transparent !important;
+    color: var(--accent) !important;
+}
 
