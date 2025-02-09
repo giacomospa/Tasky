@@ -19,3 +19,5 @@ Route::get("/service/showService/{service}",[ServiceController::class,"show"])->
 Route::get("/service/editService/{service}",[ServiceController::class,"edit"])->name("edit.service");
 
 Route::put("/service/updateService/{service}",[ServiceController::class,"update"])->name("update.service");
+
+Route::delete("/service/delete/{service}",[ServiceController::class,"delete"])->name("delete.service");

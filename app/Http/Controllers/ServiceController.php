@@ -14,7 +14,7 @@ class ServiceController extends Controller implements HasMiddleware
     public static function middleware(): array
     {
         return [
-            new Middleware('auth', only: ['create','show']),
+            new Middleware('auth', only: ['create','show','edit']),
         ];
     }
     
@@ -114,9 +114,10 @@ class ServiceController extends Controller implements HasMiddleware
         /**
         * Remove the specified resource from storage.
         */
-        public function destroy(Service $service)
+        public function delete(Service $service)
         {
-            //
+            $service->delete();
+            return redirect()->route("index")->with("success","Servizio eliminato con successo!");
         }
     }
     

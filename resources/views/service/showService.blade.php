@@ -20,13 +20,13 @@
                         @if($service->user_id === Auth::user()->id)
                         <a href="{{route("edit.service",compact("service"))}}" class="btn btn-custom btn-sm">Modifica</a>
                         @endif
-                        {{-- @if($service->user_id === Auth::user()->id)
-                        <form action="{{route("service.delete",compact("service"))}}" method="POST">
+                        @if($service->user_id === Auth::user()->id)
+                        <form action="{{route("delete.service",compact("service"))}}" method="POST">
                             @csrf
                             @method("DELETE")
                             <button type="submit" class="btn btn-custom btn-sm">Cancella</button>
                         </form>
-                        @endif --}}
+                        @endif
                     </div>
                 </div>
             </div>
