@@ -6,15 +6,6 @@
             </div>
         </div>
     </div>
-    {{-- <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-3">
-                @error('name')
-                <div class="text-danger">{{ $message }}</div>
-                @enderror
-            </div>
-        </div>
-    </div> --}}
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-6">
@@ -23,10 +14,16 @@
                     <div class="mb-3">
                         <label class="form-label">Nome del Servizio</label>
                         <input type="text" class="form-control" name="name" placeholder="Inserisci il nome">
+                        @error('name')
+                        <div class="text-danger">{{ $message }}</div>
+                        @enderror
                     </div>
                     <div class="form-floating mb-3">
                         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="description"></textarea>
                         <label for="floatingTextarea2">Descrizione</label>
+                        @error('description')
+                        <div class="text-danger">{{ $message }}</div>
+                        @enderror
                     </div>
                     <div class="input-group mb-3">
                         <input type="file" class="form-control" id="inputGroupFile02" name="img">
@@ -44,5 +41,5 @@
     </div>
 </x-layout>
 
- 
+
 

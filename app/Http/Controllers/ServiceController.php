@@ -5,9 +5,19 @@ namespace App\Http\Controllers;
 use App\Models\Service;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Routing\Controllers\Middleware;
+use Illuminate\Routing\Controllers\HasMiddleware;
 
-class ServiceController extends Controller
+class ServiceController extends Controller implements HasMiddleware
 {
+
+    public static function middleware(): array
+    {
+        return [
+            new Middleware('auth', only: ['create','show']),
+        ];
+    }
+
     /**
     * Display a listing of the resource.
     */
@@ -53,7 +63,7 @@ class ServiceController extends Controller
             "producer"=>Auth::user()->name
         ]);
         
-        return redirect()->route("index")->with("Servizio inserito con successo!");
+        return redirect()->route("index")->with("success","Servizio inserito con successo!");
     }
     
     /**
@@ -61,7 +71,7 @@ class ServiceController extends Controller
     */
     public function show(Service $service)
     {
-        //
+        return view("service/showService",compact("service"));
     }
     
     /**
