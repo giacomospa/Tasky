@@ -21,10 +21,10 @@
         <div class="row g-4 justify-content-center">
             @foreach ($services as $service)
             <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ $service->img ? Storage::url($service->img) : asset('images/service.jpg') }}" class="card-img-top" alt="Immagine Servizio">
+                <div class="card border-0" style="width: 18rem;">
+                    <img src="{{ $service->img ? Storage::url($service->img) : asset('images/service.jpg') }}" class="card-img-top" alt="Immagine Servizio" style="height: 200px; object-fit: cover;">
                     <div class="card-body">
-                        <h5 class="card-title">{{$service->name}}</h5>
+                        <h5 class="card-title fw-bold">{{$service->name}}</h5>
                         <p class="card-text text-truncate">{{$service->description}}</p>
                         <a href="{{route("show.service",compact("service"))}}" class="btn btn-custom btn-sm">Scopri di più</a>
                     </div>

@@ -3,6 +3,7 @@
     --primary: rgb(36, 35, 49);
     --secondary: rgba(244, 246, 245);
     --accent: rgba(229, 99, 153);
+    --accent2: rgba(20, 148, 184);
 }
 /* Fonts */
 :root{
@@ -72,5 +73,11 @@ h1{
 .dropdown-item:hover {
     background-color: transparent !important;
     color: var(--accent) !important;
+}
+/* Fine Navbar */
+
+/* Cards */
+.card {
+    box-shadow: 3px 0px 10px 0px var(--accent2);
 }
 
