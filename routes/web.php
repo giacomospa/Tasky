@@ -15,3 +15,7 @@ Route::get("/service/createService",[ServiceController::class,"create"])->name("
 Route::post("/service/createService/store",[ServiceController::class,"store"])->name("service.store");
 
 Route::get("/service/showService/{service}",[ServiceController::class,"show"])->name("show.service");
+
+Route::get("/service/editService/{service}",[ServiceController::class,"edit"])->name("edit.service");
+
+Route::put("/service/updateService/{service}",[ServiceController::class,"update"])->name("update.service");

@@ -10,14 +10,14 @@ use Illuminate\Routing\Controllers\HasMiddleware;
 
 class ServiceController extends Controller implements HasMiddleware
 {
-
+    
     public static function middleware(): array
     {
         return [
             new Middleware('auth', only: ['create','show']),
         ];
     }
-
+    
     /**
     * Display a listing of the resource.
     */
@@ -79,7 +79,7 @@ class ServiceController extends Controller implements HasMiddleware
     */
     public function edit(Service $service)
     {
-        //
+        return view("service/editService",compact("service"));
     }
     
     /**
@@ -87,14 +87,36 @@ class ServiceController extends Controller implements HasMiddleware
     */
     public function update(Request $request, Service $service)
     {
-        //
+        $validated= $request->validate([
+            "name"=>"required|string|max:100",
+            "description"=>"required|string|max:255",
+            "img" => "nullable|image|mimes:jpg,jpeg,png,gif",
+            "price"=>"required|numeric"
+        ],
+        [
+            "name.required"=>"Hai dimenticato il nome del servizio!",
+            "description.required"=>"Inserisci una descrizione del tuo servizio",
+            "price.required"=>"Inserisci il prezzo!"
+        ]);
+        
+        $service->update([
+            "name"=>$request->name,
+            "description"=>$request->description,
+            "img"=>$request->has('img') ? $request->file('img')->store('cover_services', 'public') : '/cover_services/default.jpg',
+            "price"=>$request->price,
+            "producer"=>Auth::user()->name
+        ]);
+
+        return redirect()->route("index")->with("success","Servizio aggiornato con successo!");
+
+        }
+        
+        /**
+        * Remove the specified resource from storage.
+        */
+        public function destroy(Service $service)
+        {
+            //
+        }
     }
     
-    /**
-    * Remove the specified resource from storage.
-    */
-    public function destroy(Service $service)
-    {
-        //
-    }
-}

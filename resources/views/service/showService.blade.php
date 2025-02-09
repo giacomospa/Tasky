@@ -17,10 +17,10 @@
                         <h6 class="card-title fw-semibold">€ {{$service->price}}</h6>
                         <h6 class="card-text fw-medium">Producer: {{$service->producer}}</h6>
                         <a href="#" class="btn btn-custom mt-4 btn-sm">Richiedi</a>
-                        {{-- @if($service->user_id === Auth::user()->id)
-                        <a href="{{route("service.edit",compact("service"))}}" class="btn btn-custom btn-sm">Modifica</a>
-                        @endif
                         @if($service->user_id === Auth::user()->id)
+                        <a href="{{route("edit.service",compact("service"))}}" class="btn btn-custom btn-sm">Modifica</a>
+                        @endif
+                        {{-- @if($service->user_id === Auth::user()->id)
                         <form action="{{route("service.delete",compact("service"))}}" method="POST">
                             @csrf
                             @method("DELETE")
