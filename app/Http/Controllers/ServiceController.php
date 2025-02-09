@@ -4,61 +4,85 @@ namespace App\Http\Controllers;
 
 use App\Models\Service;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ServiceController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     */
+    * Display a listing of the resource.
+    */
     public function index()
     {
         $services= Service::all();
         return view("service/index",compact("services"));
     }
-
+    
     /**
-     * Show the form for creating a new resource.
-     */
+    * Show the form for creating a new resource.
+    */
     public function create()
     {
-        //
+        return view("service/createService");
     }
-
+    
     /**
-     * Store a newly created resource in storage.
-     */
+    * Store a newly created resource in storage.
+    */
     public function store(Request $request)
     {
-        //
+        $validated= $request->validate([
+            "name"=>"required|string|max:100",
+            "description"=>"required|string|max:255",
+            "img" => "nullable|image|mimes:jpg,jpeg,png,gif",
+            "price"=>"required|numeric"
+        ],
+        [
+            "name.required"=>"Hai dimenticato il nome del servizio!",
+            "description.required"=>"Inserisci una descrizione del tuo servizio",
+            "price.required"=>"Inserisci il prezzo!"
+        ]);
+        // dd($request->all());
+        
+        // Recupero l'utente loggato
+        $user=Auth::user();
+        $user->services()->create([
+            "name"=>$request->name,
+            "description"=>$request->description,
+            "img"=>$request->has('img') ? $request->file('img')->store('cover_services', 'public') : '/cover_services/default.jpg',
+            "price"=>$request->price,
+            "producer"=>Auth::user()->name
+        ]);
+        
+        return redirect()->route("index")->with("Servizio inserito con successo!");
     }
-
+    
     /**
-     * Display the specified resource.
-     */
+    * Display the specified resource.
+    */
     public function show(Service $service)
     {
         //
     }
-
+    
     /**
-     * Show the form for editing the specified resource.
-     */
+    * Show the form for editing the specified resource.
+    */
     public function edit(Service $service)
     {
         //
     }
-
+    
     /**
-     * Update the specified resource in storage.
-     */
+    * Update the specified resource in storage.
+    */
     public function update(Request $request, Service $service)
     {
         //
     }
-
+    
     /**
-     * Remove the specified resource from storage.
-     */
+    * Remove the specified resource from storage.
+    */
     public function destroy(Service $service)
     {
         //

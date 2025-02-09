@@ -10,3 +10,6 @@ Route::get("/auth/profile",[PublicController::class,"userProfile"])->name("user.
 
 Route::get("/service/index",[ServiceController::class,"index"])->name("index");
 
+Route::get("/service/createService",[ServiceController::class,"create"])->name("create.service");
+
+Route::post("/service/createService/store",[ServiceController::class,"store"])->name("service.store");

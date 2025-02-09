@@ -21,6 +21,9 @@
                     </ul>
                 </li>
                 @else 
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route("create.service")}}">Aggiungi</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ciao {{Auth::user()->name}}</a>
                     <ul class="dropdown-menu dropdown-custom">
