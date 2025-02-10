@@ -48,8 +48,16 @@ class User extends Authenticatable
         ];
     }
 
+    // Relazione 1-N con i servizi
     public function services(): HasMany
     {
         return $this->hasMany(Service::class);
     }
+
+    // Relazione 1-N con le reviews
+    public function reviews(): HasMany
+    {
+        return $this->hasMany(Review::class);
+    }
+
 }

@@ -13,4 +13,10 @@ class Service extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    // relazione 1-N con le reviews
+    public function reviews() {
+        return $this->hasMany(Review::class);
+    }
+    
 }
