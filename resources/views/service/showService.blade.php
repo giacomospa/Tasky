@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 d-flex justify-content-center mt-5 ">
-                <h1>Servizio di {{$service->name}}</h1>
+                <h1>{{$service->name}}</h1>
             </div>
         </div>
     </div>
@@ -30,6 +30,15 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            @if($service->user_id !== Auth::user()->id)
+            <div class="col-12 d-flex justify-content-center mt-5 ">
+                <a href="{{route("create.review")}}" class="btn btn-info">Lascia una Recensione</a>
+            </div>
+            @endif
         </div>
     </div>
 </x-layout> 

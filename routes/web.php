@@ -24,3 +24,7 @@ Route::put("/service/updateService/{service}",[ServiceController::class,"update"
 Route::delete("/service/delete/{service}",[ServiceController::class,"delete"])->name("delete.service");
 
 Route::get("/review/index",[ReviewController::class,"index"])->name("index.review");
+
+Route::get("review/createReview",[ReviewController::class,"create"])->name("create.review");
+
+Route::post("review/createReview/store",[ReviewController::class,"store"])->name("store.review");
