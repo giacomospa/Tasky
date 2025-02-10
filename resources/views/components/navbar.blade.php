@@ -35,6 +35,9 @@
                     </ul>
                 </li>
                 @endguest
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{{route("index.review")}}">Recensioni</a>
+                </li>
             </ul>
         </div>
     </div>

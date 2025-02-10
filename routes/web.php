@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +22,5 @@ Route::get("/service/editService/{service}",[ServiceController::class,"edit"])->
 Route::put("/service/updateService/{service}",[ServiceController::class,"update"])->name("update.service");
 
 Route::delete("/service/delete/{service}",[ServiceController::class,"delete"])->name("delete.service");
+
+Route::get("/review/index",[ReviewController::class,"index"])->name("index.review");
