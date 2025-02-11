@@ -36,7 +36,7 @@
         <div class="row">
             @if($service->user_id !== Auth::user()->id)
             <div class="col-12 d-flex justify-content-center mt-5 ">
-                <a href="{{route("create.review")}}" class="btn btn-info">Lascia una Recensione</a>
+                <a href="{{route("create.review",['service_id' => $service->id])}}" class="btn btn-info">Lascia una Recensione</a>
             </div>
             @endif
         </div>

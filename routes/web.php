@@ -25,6 +25,6 @@ Route::delete("/service/delete/{service}",[ServiceController::class,"delete"])->
 
 Route::get("/review/index",[ReviewController::class,"index"])->name("index.review");
 
-Route::get("review/createReview",[ReviewController::class,"create"])->name("create.review");
+Route::get("review/createReview/{service_id}",[ReviewController::class,"create"])->name("create.review");
 
 Route::post("review/createReview/store",[ReviewController::class,"store"])->name("store.review");
