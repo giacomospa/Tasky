@@ -28,3 +28,4 @@ Route::get("/review/index",[ReviewController::class,"index"])->name("index.revie
 Route::get("review/createReview/{service_id}",[ReviewController::class,"create"])->name("create.review");
 
 Route::post("review/createReview/store",[ReviewController::class,"store"])->name("store.review");
+

@@ -69,8 +69,12 @@ h1{
 }
 /* Fine Navbar */
 
-/* Cards servizi*/
+/* Cards*/
 .card {
     box-shadow: 3px 0px 10px 0px var(--accent2);
 }
 
+.card-review{
+    box-shadow: 5px 3px 10px 3px var(--accent);
+
+}

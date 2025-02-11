@@ -24,7 +24,8 @@ class ReviewController extends Controller implements HasMiddleware
     */
     public function index()
     {
-        return view("review/index");
+        $reviews= Review::all();
+        return view("review/index",compact("reviews"));
     }
     
     /**
