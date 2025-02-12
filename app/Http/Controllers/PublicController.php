@@ -12,7 +12,7 @@ class PublicController extends Controller implements HasMiddleware
     public static function middleware(): array
     {
         return [
-            new Middleware('auth', except: ['home']),
+            new Middleware('auth', except: ['home','contacts'])
         ];
     }
 
@@ -22,6 +22,10 @@ class PublicController extends Controller implements HasMiddleware
 
     public function userProfile(){
         return view("auth.profile");
+    }
+
+    public function contacts(){
+        return view("contacts.contact");
     }
 }
 

@@ -41,6 +41,9 @@
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="{{route("index.review")}}">Recensioni</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{{route("contacts")}}">Contatti</a>
+                </li>
             </ul>
         </div>
     </div>

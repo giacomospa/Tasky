@@ -54,8 +54,8 @@
                             <label for="exampleInputPassword1" class="form-label">Conferma Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Conferma la tua password" name="password_confirmation">
                         </div>
+                        <button type="submit" class="btn btn-custom btn-sm">Registrati</button>
                     </div>
-                    <button type="submit" class="btn btn-custom btn-sm" data-aos="fade-up" data-aos-duration="2000">Registrati</button>
                 </form>
             </div>
         </div>
