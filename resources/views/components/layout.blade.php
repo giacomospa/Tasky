@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {{-- Vite --}}
     @vite(['resources/css/app.css','resources/css/style.css', 'resources/js/app.js'])
+    @livewireStyles
     {{-- CDN Google Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +28,9 @@
     <script>
         AOS.init();
     </script> 
+    
+    @livewireScripts
+    
 </body>
 </html>
 

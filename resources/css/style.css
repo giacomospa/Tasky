@@ -85,7 +85,9 @@ h1{
 
 #logo:hover {
     filter: brightness(0) invert(1); 
+    
 }
+
 
 /* Cards*/
 .card {
