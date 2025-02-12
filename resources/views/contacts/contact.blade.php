@@ -17,4 +17,6 @@
             </div>
         </div>
     </div>
+    <livewire:contactForm/>
 </x-layout>
+
