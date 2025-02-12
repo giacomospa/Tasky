@@ -1,7 +1,7 @@
 <x-layout>
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-5">
+            <div class="col-12 d-flex justify-content-center mt-5" data-aos="fade-right" data-aos-duration="1800">
                 <h1>
                     @if(Auth::user()->gender === "male")
                     Benvenuto {{Auth::user()->name}}
@@ -33,7 +33,7 @@
         </div>
     </div>
     <div class="container mt-5">
-        <div class="row g-4 justify-content-center">
+        <div class="row g-4 justify-content-center" data-aos="fade-left" data-aos-duration="1800">
             @foreach (Auth::user()->services as $service)
             <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
                 <div class="card border-0" style="width: 18rem;">

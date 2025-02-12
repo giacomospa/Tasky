@@ -1,14 +1,14 @@
 <x-layout>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-5 ">
+            <div class="col-12 d-flex justify-content-center g-5" data-aos="flip-down" data-aos-duration="1300">
                 <h1>Aggiungi il tuo Servizio</h1>
             </div>
         </div>
     </div>
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-6">
+            <div class="col-6" data-aos="flip-up" data-aos-duration="1300">
                 <form method="POST" action="{{route("service.store")}}" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-3">

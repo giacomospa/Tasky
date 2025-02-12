@@ -69,6 +69,24 @@ h1{
 }
 /* Fine Navbar */
 
+/* Animazione Logo */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.logo-animation {
+    animation: fadeIn 2s ease-in-out 1;
+}
+
+#logo:hover {
+    filter: brightness(0) invert(1); 
+}
+
 /* Cards*/
 .card {
     box-shadow: 3px 0px 10px 0px var(--accent2);
@@ -78,3 +96,4 @@ h1{
     box-shadow: 5px 3px 10px 3px var(--accent);
 
 }
+

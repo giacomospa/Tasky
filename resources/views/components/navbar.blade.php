@@ -1,6 +1,9 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container">
-        <a class="navbar-brand text-tasky" href="{{route("homepage")}}">TASKY</a>
+        <a class="navbar-brand text-tasky" href="{{route("homepage")}}" id="logo">
+            {{-- LOGO --}}
+            <x-logo/>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,7 +25,7 @@
                 </li>
                 @else 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route("create.service")}}">Aggiungi</a>
+                    <a class="nav-link" href="{{route("create.service")}}">Crea</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ciao {{Auth::user()->name}}</a>

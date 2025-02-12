@@ -1,7 +1,7 @@
 <x-layout>
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-5">
+            <div class="col-12 d-flex justify-content-center mt-5" data-aos="flip-down" data-aos-duration="1300">
                 <h1>Crea il tuo Account Tasky</h1>
             </div>
             <div class="col-12 d-flex justify-content-center">
@@ -19,7 +19,7 @@
     </div>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-4 col-lg-6 d-flex justify-content-center mt-5">
+            <div class="col-12 col-md-4 col-lg-6 d-flex justify-content-center mt-5" data-aos="flip-up" data-aos-duration="1300">
                 <form class="w-75" method="POST" action="{{route("register")}}">
                     @csrf
                     <div class="mb-3">
@@ -45,15 +45,17 @@
                             <label class="form-check-label" for="female">Altro</label>
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Crea la tua password" name="password">
+                    <div data-aos="flip-down" data-aos-duration="1300">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Crea la tua password" name="password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Conferma Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Conferma la tua password" name="password_confirmation">
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Conferma Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Conferma la tua password" name="password_confirmation">
-                    </div>
-                    <button type="submit" class="btn btn-custom btn-sm">Registrati</button>
+                    <button type="submit" class="btn btn-custom btn-sm" data-aos="fade-up" data-aos-duration="2000">Registrati</button>
                 </form>
             </div>
         </div>

@@ -1,7 +1,7 @@
 <x-layout>
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-5">
+            <div class="col-12 d-flex justify-content-center mt-5" data-aos="flip-down" data-aos-duration="1300">
                 <h1>Accedi al tuo Account Tasky</h1>
             </div>
             <div class="col-12 d-flex justify-content-center">
@@ -19,7 +19,7 @@
     </div>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-4 col-lg-6 d-flex justify-content-center mt-5">
+            <div class="col-12 col-md-4 col-lg-6 d-flex justify-content-center mt-5" data-aos="flip-up" data-aos-duration="1300">
                 <form class="w-75" method="POST" action="{{route("login")}}">
                     @csrf
                     <div class="mb-3">
