@@ -1,5 +1,12 @@
 <x-layout>
-    <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center mt-5" data-aos="fade-down" data-aos-duration="1000">
+                <h1>{{Auth::user()->name}}, valuta il tuo acquisto!</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center mt-5" data-aos="zoom-out" data-aos-duration="1300">
         <div class="col mx-auto justify-content-center d-flex"> 
             <div class="card shadow-lg border-0 rounded-4" style="max-width: 500px;">
                 <div class="card-body p-4">

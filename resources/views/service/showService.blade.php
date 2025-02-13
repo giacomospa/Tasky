@@ -1,14 +1,14 @@
 <x-layout>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-5 ">
+            <div class="col-12 d-flex justify-content-center mt-5" data-aos="flip-up" data-aos-duration="1300">
                 <h1>{{$service->name}}</h1>
             </div>
         </div>
     </div>
     <div class="container mt-5">
         <div class="row g-4 justify-content-center">
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" data-aos="zoom-in" data-aos-duration="1300">
                 <div class="card border-0" style="width: 18rem;">
                     <img src="{{ $service->img ? Storage::url($service->img) : asset('images/service.jpg') }}" class="card-img-top" alt="Immagine servizio">
                     <div class="card-body d-flex flex-column align-items-center">
@@ -17,6 +17,9 @@
                         <h6 class="card-title fw-semibold">€ {{$service->price}}</h6>
                         <h6 class="card-text fw-medium">Producer: {{$service->producer}}</h6>
                         <a href="#" class="btn btn-custom mt-4 btn-sm">Richiedi</a>
+                        @if($service->user_id !== Auth::user()->id)
+                        <a href="{{route("create.review",['service_id' => $service->id])}}" class="btn btn-custom btn-sm">Valuta</a>
+                        @endif
                         @if($service->user_id === Auth::user()->id)
                         <a href="{{route("edit.service",compact("service"))}}" class="btn btn-custom btn-sm">Modifica</a>
                         @endif
@@ -32,15 +35,13 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    {{-- <div class="container-fluid">
         <div class="row">
             @if($service->user_id !== Auth::user()->id)
-            <div class="col-12 d-flex justify-content-center mt-5 ">
-                <a href="{{route("create.review",['service_id' => $service->id])}}" class="btn btn-info">Lascia una Recensione</a>
-            </div>
+            <a href="{{route("create.review",['service_id' => $service->id])}}" class="btn btn-info">Lascia una Recensione</a>
             @endif
         </div>
-    </div>
+    </div> --}}
 </x-layout> 
 
 

@@ -29,8 +29,9 @@
         AOS.init();
     </script> 
     
-    @livewireScripts
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     
+    @livewireScripts
 </body>
 </html>
 

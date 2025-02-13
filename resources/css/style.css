@@ -1,6 +1,7 @@
 /* Palette colori */
 :root {
-    --primary: rgb(36, 35, 49);
+    /* --primary: rgb(36, 35, 49); */
+    --primary: rgb(10, 10, 10);
     --secondary: rgba(244, 246, 245);
     --accent: rgba(229, 99, 153);
     --accent2: rgb(20, 148, 184);
@@ -20,7 +21,7 @@ body{
     font-family: var(--font-secondary);
 }
 
-h1{
+h1,h2,h3{
     font-family: var(--font-primary);
 }
 /* Button in generale */
@@ -28,6 +29,7 @@ h1{
     background-color: var(--accent);
     color: var(black);
     font-weight:600;
+    margin-top: 5px;
 }
 
 /* Navbar */
@@ -88,7 +90,6 @@ h1{
     
 }
 
-
 /* Cards*/
 .card {
     box-shadow: 3px 0px 10px 0px var(--accent2);
@@ -99,3 +100,17 @@ h1{
 
 }
 
+/* Hero Section */
+
+#hero{
+    position: relative;
+    width: auto;
+}
+
+.hero-content{
+    position: absolute;
+}
+
+.hover-custom:hover{
+    color: var(--secondary) !important;
+}
