@@ -104,7 +104,7 @@ h1,h2,h3{
 
 #hero{
     position: relative;
-    width: auto;
+    width: 100%;
 }
 
 .hero-content{

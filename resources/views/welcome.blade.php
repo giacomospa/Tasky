@@ -9,7 +9,7 @@
             <div class="col d-flex justify-content-center hero-content mt-5" data-aos="fade-left"
             data-aos-duration="1300">
             <button class="btn btn-custom mt-4">
-                <a class="text-decoration-none text-dark hover-custom" href="{{route("index")}}">Inizia subito</a>
+                <a class="text-decoration-none text-dark hover-custom" href="{{route("index")}}">Scopri</a>
             </button>
         </div>
     </div>
