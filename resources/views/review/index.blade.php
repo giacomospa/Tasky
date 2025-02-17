@@ -1,4 +1,7 @@
 <x-layout>
+    @push('title')
+    Recensioni
+    @endpush
     <div class="container">
         <div class="row">
             <div class="col-12 d-flex justify-content-center g-5" data-aos="fade-down" data-aos-duration="1300">

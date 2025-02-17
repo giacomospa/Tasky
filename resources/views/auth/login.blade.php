@@ -1,4 +1,7 @@
 <x-layout>
+    @push('title')
+        Accedi
+    @endpush
     <div class="container">
         <div class="row">
             <div class="col-12 d-flex justify-content-center mt-5" data-aos="flip-down" data-aos-duration="1300">

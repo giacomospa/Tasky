@@ -14,12 +14,24 @@ particlesJS("particles-js", {
     "particles": {
         "number": { "value": 80 },  // Numero di particelle
         "size": { "value": 3 },     // Dimensione delle particelle
-        "move": { "speed": 2 },     // Velocità di movimento
+        "move": { "speed": 3 },     // Velocità di movimento
         "line_linked": {
             "enable": true,         // Connessione tra le particelle
-            "distance": 150,        // Distanza massima tra particelle per collegarsi
-            "color": "#ffffff"
+            "distance": 180,        // Distanza massima tra particelle per collegarsi
+            "color": "#1494b8"
         }
     }
 });
 
+// Colore alt
+// #6610F2
+
+// Effetto Scroll su Freccia 
+
+let arrow= document.querySelector("#arrow");
+
+arrow.addEventListener("click",()=>{
+
+    let chiSiamo = document.querySelector("#aboutUs");
+    chiSiamo.scrollIntoView({ behavior: "smooth" });
+})

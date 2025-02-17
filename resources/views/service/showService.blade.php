@@ -1,4 +1,7 @@
 <x-layout>
+    @push('title')
+        {{$service->name}}
+    @endpush
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 d-flex justify-content-center mt-5" data-aos="flip-up" data-aos-duration="1300">
