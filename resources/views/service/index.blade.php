@@ -30,7 +30,7 @@
             @foreach ($services as $service)
             <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" data-aos="fade-up"
             data-aos-anchor-placement="center-bottom" data-aos-duration="1300">
-            <div class="card border-0" style="width: 18rem;">
+            <div class="card border-0 glass-card" style="width: 18rem;">
                 <img src="{{ $service->img ? Storage::url($service->img) : asset('images/service.jpg') }}" class="card-img-top" alt="Immagine Servizio" style="height: 200px; object-fit: cover;">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">{{$service->name}}</h5>

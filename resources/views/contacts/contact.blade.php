@@ -1,11 +1,11 @@
 <x-layout>
     @push('title')
-        Contattaci
+        Newsletter
     @endpush
     <div class="container">
         <div class="row">
             <div class="col-12 d-flex justify-content-center mt-5" data-aos="flip-down" data-aos-duration="1300">
-                <h1>Contattaci, compila il form</h1>
+                <h1>Resta Aggiornato, iscriviti:</h1>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 @if ($errors->any())

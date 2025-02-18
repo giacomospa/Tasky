@@ -48,7 +48,7 @@
                             <label class="form-check-label" for="female">Altro</label>
                         </div>
                     </div>
-                    <div data-aos="flip-down" data-aos-duration="1300">
+                    <div data-aos="flip-up" data-aos-duration="1300">
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Crea la tua password" name="password">

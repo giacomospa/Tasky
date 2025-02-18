@@ -27,5 +27,6 @@ class PublicController extends Controller implements HasMiddleware
     public function contacts(){
         return view("contacts.contact");
     }
+
 }
 

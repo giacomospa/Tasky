@@ -19,10 +19,12 @@
     <title>@stack("title")</title>
 </head>
 <body>
+    {{-- Navbar compon --}}
     <x-navbar/>
+    
     {{$slot}}
     
-    
+    {{-- CDN Aos e Swiper --}}
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     
@@ -31,9 +33,14 @@
         AOS.init();
     </script> 
     
+    {{-- CDN JS --}}
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     
+    {{-- Inizializzazione Livewire --}}
     @livewireScripts
+    
+    {{-- Footer compon--}}
+    <x-footer/>
 </body>
 </html>
 
