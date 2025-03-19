@@ -14,7 +14,6 @@
 }
 
 /* Basic */
-
 body{
     overflow-x: hidden;
     background-color: var(--primary);
@@ -25,12 +24,13 @@ body{
 h1,h2,h3{
     font-family: var(--font-primary);
 }
+
 /* Button in generale */
 .btn-custom{
     background-color: var(--accent);
-    color: var(black);
-    font-weight:600;
-    margin-top: 5px;
+    color: whitesmoke;
+    font-weight:400;
+    /* margin-top: 5px; */
 }
 
 /* Navbar */
@@ -69,6 +69,30 @@ h1,h2,h3{
 .dropdown-item:hover {
     background-color: transparent !important;
     color: var(--accent) !important;
+}
+
+.dropdown-item-profile{
+    background-color: var(--accent2);
+    color: whitesmoke;
+    font-weight:500;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.dropdown-item-profile:hover{
+    background-color: transparent !important;
+    color: whitesmoke !important;
+}
+
+.btn-logout{
+    background-color: #dc3545;
+    color: whitesmoke;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.btn-logout:hover{
+    background-color: transparent !important;
+    color: whitesmoke !important;
 }
 /* Fine Navbar */
 
@@ -138,8 +162,15 @@ h1,h2,h3{
     border-radius: 15px;
 }
 
-/* Footer */
+/* About Us Carousel */
+.about-us-bg{
+    height: 650px;
+    width: 100%;
+    background-image: url("../img/background.jpeg");
+    background-size: cover;
+}
 
+/* Footer */
 .border-color{
     border-color: var(--accent) !important;
 }
