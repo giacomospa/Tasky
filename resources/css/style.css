@@ -121,11 +121,11 @@ h1,h2,h3{
 
 /* Cards*/
 .card {
-    box-shadow: 3px 0px 10px 0px var(--accent2);
+    box-shadow: 10px 12px 15px 2px var(--accent2-op);
 }
 
 .card-review{
-    box-shadow: 5px 3px 10px 3px var(--accent);
+    box-shadow: 10px 12px 15px 2px var(--accent-op);
     
 }
 
