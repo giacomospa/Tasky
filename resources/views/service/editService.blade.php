@@ -1,10 +1,10 @@
 <x-layout>
     @push('title')
-        Modifica il Servizio
+    Modifica il Servizio
     @endpush
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-5" data-aos="flip-down" data-aos-duration="1300">
+            <div class="col-12 d-flex justify-content-center" data-aos="flip-down" data-aos-duration="1300">
                 <h1>Modifica il Servizio</h1>
             </div>
         </div>
@@ -23,11 +23,20 @@
                         @enderror
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="description" value="{{$service->description}}"></textarea>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="description">{{ $service->description }}</textarea>
                         <label for="floatingTextarea2">Descrizione</label>
                         @error('description')
                         <div class="text-danger">{{ $message }}</div>
                         @enderror
+                    </div>
+                    <!-- Immagine Attuale -->
+                    <div class="mb-3">
+                        <label class="form-label">Immagine Attuale</label>
+                        @if ($service->img)
+                        <div>
+                            <img src="{{ asset('storage/' . $service->img) }}" alt="Immagine attuale" style="max-width: 200px;">
+                        </div>
+                        @endif
                     </div>
                     <div class="input-group mb-3">
                         <input type="file" class="form-control" id="inputGroupFile02" name="img">

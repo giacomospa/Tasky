@@ -1,10 +1,10 @@
 <x-layout>
     @push('title')
-        {{$service->name}}
+    {{$service->name}}
     @endpush
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-5" data-aos="flip-up" data-aos-duration="1300">
+            <div class="col-12 d-flex justify-content-center" data-aos="flip-up" data-aos-duration="1300">
                 <h1>{{$service->name}}</h1>
             </div>
         </div>
@@ -27,24 +27,42 @@
                         <a href="{{route("edit.service",compact("service"))}}" class="btn btn-custom btn-sm">Modifica</a>
                         @endif
                         @if($service->user_id === Auth::user()->id)
-                        <form action="{{route("delete.service",compact("service"))}}" method="POST">
+                        {{-- <form action="{{route("delete.service",compact("service"))}}" method="POST">
                             @csrf
                             @method("DELETE")
                             <button type="submit" class="btn btn-custom btn-sm">Cancella</button>
-                        </form>
+                        </form> --}}
+                        <!-- Bottone per aprire la modale -->
+                        <button type="button" class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal" data-service-id="{{ $service->id }}">
+                            Elimina
+                        </button>
                         @endif
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    {{-- <div class="container-fluid">
-        <div class="row">
-            @if($service->user_id !== Auth::user()->id)
-            <a href="{{route("create.review",['service_id' => $service->id])}}" class="btn btn-info">Lascia una Recensione</a>
-            @endif
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content text-black">
+                <div class="modal-header">
+                    <h5 class="modal-title">Conferma Eliminazione</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Sei sicuro di voler eliminare questo servizio?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info btn-sm" data-bs-dismiss="modal">Annulla</button>
+                    <form method="POST" action="{{ route('delete.service', $service->id) }}">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger btn-sm">Elimina</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div> --}}
+    </div>
 </x-layout> 
 
 

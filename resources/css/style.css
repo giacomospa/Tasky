@@ -5,7 +5,9 @@
     --primary: rgb(10, 10, 10);
     --secondary: rgba(244, 246, 245);
     --accent: rgba(229, 99, 153);
+    --accent-op: rgba(229, 99, 153,0.7);
     --accent2: rgb(20, 148, 184);
+    --accent2-op: rgb(20, 148, 184,0.5);
 }
 /* Fonts */
 :root{
@@ -24,13 +26,15 @@ body{
 h1,h2,h3{
     font-family: var(--font-primary);
 }
-
+.text-title{
+    font-family: var(--font-primary);
+}
 /* Button in generale */
 .btn-custom{
     background-color: var(--accent);
     color: whitesmoke;
     font-weight:400;
-    /* margin-top: 5px; */
+    margin-top: 5px;
 }
 
 /* Navbar */
@@ -141,7 +145,7 @@ h1,h2,h3{
 }
 
 .scroll-down{
-    font-size: 2.3rem;
+    font-size: 2rem;
     position: relative;
     cursor: pointer;
     animation: bounce 1.5s infinite;
@@ -156,21 +160,86 @@ h1,h2,h3{
 .title-custom{
     color: var(--accent);
 }
+.title-custom2{
+    color: var(--accent2);
+}
 
 .shadow-custom{
     box-shadow: 0px 0px 6px 3px var(--accent2);
     border-radius: 15px;
 }
 
-/* About Us Carousel */
+/*CAROUSEL*/
 .about-us-bg{
-    height: 650px;
+    background:linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    height: 750px;
     width: 100%;
-    background-image: url("../img/background.jpeg");
     background-size: cover;
+    position: relative;
 }
 
-/* Footer */
+#textCarousel, .carousel-inner, .carousel-item {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: whitesmoke; 
+    max-width: 100%;
+    padding: 2rem;
+    text-shadow: 10px 6px 10px black;
+}
+
+.carousel-text h2 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+.carousel-indicators {
+    bottom: 20px;
+}
+/* FINE CAROUSEL */
+
+/* AGGIUNGI SERVIZIO/REGISTRATI HOMEPAGE */
+.border-custom{
+    border-bottom: 2px solid var(--accent-op);
+    padding: 8px;
+    width: 50%;
+}
+
+.freelance-row{
+    position: relative;
+    left: -12%;
+}
+.freelance-span{
+    text-shadow: 5px 3px 12px var(--accent-op);
+
+}
+.service-row{
+    position: relative;
+    left: 10%;
+}
+.service-span{
+    text-shadow: 5px 3px 12px var(--accent2);
+
+}
+.home-link{
+    color: whitesmoke;
+}
+.home-link:hover{
+    color: #D2F898;
+}
+
+/* FOOTER */
 .border-color{
     border-color: var(--accent) !important;
 }

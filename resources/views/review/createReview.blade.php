@@ -1,7 +1,7 @@
 <x-layout>
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-5" data-aos="fade-down" data-aos-duration="1000">
+            <div class="col-12 d-flex justify-content-center mt-2" data-aos="fade-down" data-aos-duration="1000">
                 <h1>{{Auth::user()->name}}, valuta il tuo acquisto!</h1>
             </div>
         </div>

@@ -4,7 +4,7 @@
     @endpush
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-5" data-aos="flip-down" data-aos-duration="1300">
+            <div class="col-12 d-flex justify-content-center mt-2" data-aos="flip-down" data-aos-duration="1300">
                 <h1>Crea il tuo Account Tasky</h1>
             </div>
             <div class="col-12 d-flex justify-content-center">
@@ -20,9 +20,9 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" data-aos="flip-up" data-aos-duration="1300">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-4 col-lg-6 d-flex justify-content-center mt-5" data-aos="flip-up" data-aos-duration="1300">
+            <div class="col-12 col-md-4 col-lg-6 d-flex justify-content-center mt-5">
                 <form class="w-75" method="POST" action="{{route("register")}}">
                     @csrf
                     <div class="mb-3">
@@ -48,7 +48,7 @@
                             <label class="form-check-label" for="female">Altro</label>
                         </div>
                     </div>
-                    <div data-aos="flip-up" data-aos-duration="1300">
+                    <div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Crea la tua password" name="password">

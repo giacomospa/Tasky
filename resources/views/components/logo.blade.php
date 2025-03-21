@@ -1,4 +1,4 @@
-<svg width="170" height="100" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+<svg width="150" height="90" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <!-- Gradient per effetto tech -->
         <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -19,7 +19,7 @@
     </defs>
     
     <g transform="translate(40, 140)">
-        <text class="tech-font" x="-9" y="-22">T</text>
-        <text class="tech-font" x="8.5" y="0">K</text>
+        <text class="tech-font" x="-9.8" y="-18">T</text>
+        <text class="tech-font" x="8.5" y="0">k</text>
     </g>
 </svg>

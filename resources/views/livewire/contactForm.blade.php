@@ -10,7 +10,7 @@
     </div>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-4 col-lg-6 d-flex justify-content-center mt-5" data-aos="flip-up" data-aos-duration="1300">
+            <div class="col-12 col-md-4 col-lg-6 d-flex justify-content-center mt-4" data-aos="flip-up" data-aos-duration="1300">
                 <form class="w-75" wire:submit.prevent="store">
                     @csrf
                     <div class="mb-3">

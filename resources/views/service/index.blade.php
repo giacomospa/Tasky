@@ -4,7 +4,7 @@
     @endpush
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center g-5" data-aos="fade-down" data-aos-duration="1300" >
+            <div class="col-12 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1300" >
                 <h1>I nostri Servizi</h1>
             </div>
         </div>

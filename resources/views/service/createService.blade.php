@@ -1,4 +1,5 @@
 <x-layout>
+    {{-- RICORDA CHE è DIVERSO DAL CREATE SERVICE COMPONENT, è QUI SOLO PER RISERVA --}}
     <div class="container-fluid" data-aos="flip-down" data-aos-duration="1300">
         <div class="row">
             <div class="col-12 d-flex justify-content-center g-5">
