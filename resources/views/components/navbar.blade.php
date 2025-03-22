@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg mb-5">
-    <div class="container">
+<nav class="navbar navbar-expand-lg mb-4 px-4">
+    <div class="container-fluid">
         <a class="navbar-brand text-tasky" href="{{route("homepage")}}" id="logo">
             {{-- LOGO --}}
             <x-logo/>
@@ -30,14 +30,18 @@
                     </ul>
                 </li>
                 @else 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ciao {{Auth::user()->name}}</a>
-                    <ul class="dropdown-menu dropdown-custom ">
-                        <li class="w-100"><a class="dropdown-item dropdown-item-profile btn btn-profile btn-sm m-1 text-center" href="{{route("user.profile")}}">Profilo</a></li>
-                        <form action="{{route("logout")}}" method="POST" >
-                            @csrf
-                            <button type="submit" class="btn btn-logout btn-sm p-1 m-1 w-100">Logout</button>
-                        </form>
+                <li class="nav-item dropdown pe-3">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{Auth::user()->name}}</a>
+                    <ul class="dropdown-menu dropdown-custom">
+                        <li class="px-2 p-1">
+                            <a class="btn btn-profile btn-sm w-100 text-center" href="{{route("user.profile")}}">My Tasky</a>
+                        </li>
+                        <li class="px-2 p-1">
+                            <form action="{{route("logout")}}" method="POST">
+                                @csrf
+                                <button type="submit" class="btn btn-logout btn-sm w-100">Logout</button>
+                            </form>
+                        </li>
                     </ul>
                 </li>
                 @endguest

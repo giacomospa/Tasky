@@ -1,6 +1,6 @@
 <x-layout>
     @push('title')
-        Accedi
+    Accedi
     @endpush
     <div class="container">
         <div class="row">
@@ -33,7 +33,7 @@
                         <label for="exampleInputPassword1" class="form-label">Password</label>
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Inserisci la tua password" name="password">
                     </div>
-                    <button type="submit" class="btn btn-custom btn-sm">Accedi</button>
+                    <button type="submit" class="btn btn-outline-light">Accedi</button>
                 </form>
             </div>
         </div>

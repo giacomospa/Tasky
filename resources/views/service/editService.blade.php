@@ -46,7 +46,7 @@
                         <label for="price" class="form-label">Prezzo</label>
                         <input type="number" class="form-control" id="price" name="price" placeholder="Inserisci il prezzo" step="0.01" min="0" required value="{{$service->price}}">
                     </div>
-                    <button type="submit" class="btn btn-custom mt-3">Aggiorna</button>
+                    <button type="submit" class="btn btn-outline-light mt-3">Aggiorna</button>
                 </form>
             </div>
         </div>

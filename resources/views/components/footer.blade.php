@@ -1,4 +1,4 @@
-<footer class="text-light py-4 mt-5">
+<footer class="text-light py-4 mt-5 py-5">
     <div class="container footer-position">
         <div class="row">
             <!-- Logo e descrizione -->

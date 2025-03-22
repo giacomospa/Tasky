@@ -46,10 +46,10 @@ class ReviewController extends Controller implements HasMiddleware
         $validated= $request->validate([
             "rating"=>"required",
             "comment"=>"required|string|max:500",
-            "service_id"=>"exists:services,id"
+            "service_id"=>"exists:services,id",
         ],
         [
-            "rating.required"=>"Devi selezionare un valore!",
+            "rating.required"=>"Seleziona un valore da 1 a 5!",
             "comment.required"=>"Motiva il valore assegnato!",
             "comment.max"=>"Non puoi superare i 500 caratteri",
             "service_id.exist"=>"Il servizio selezionato non esiste"
@@ -59,7 +59,7 @@ class ReviewController extends Controller implements HasMiddleware
         $user->reviews()->create([
             "rating"=>$request->rating,
             "comment"=>$request->comment,
-            "service_id"=>$request->service_id
+            "service_id"=>$request->service_id,
         ]);
         
         return redirect()->route('user.profile', ['service_id' => $request->service_id])

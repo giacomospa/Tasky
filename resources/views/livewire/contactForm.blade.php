@@ -25,7 +25,7 @@
                         <div class="form-floating">
                             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" wire:model="info"></textarea>
                             <label for="floatingTextarea2">Comments</label>
-                            <button type="submit" class="btn btn-custom mt-4 btn-sm">Invia</button>
+                            <button type="submit" class="btn btn-outline-light mt-4">Invia</button>
                         </div>
                     </div>
                 </form>

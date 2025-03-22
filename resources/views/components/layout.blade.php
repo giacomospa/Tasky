@@ -19,6 +19,10 @@
     <title>@stack("title")</title>
 </head>
 <body>
+    {{-- SFONDO --}}
+    <div class="bg-overlay">
+        <img src="/media/sfondo-def.jpg" alt="immagine di sfondo">
+    </div>
     {{-- Navbar compon --}}
     <x-navbar/>
     
@@ -30,7 +34,10 @@
     
     {{-- Inizializzazione di Aos --}}
     <script>
-        AOS.init();
+        AOS.init({
+            once: true, 
+            disable: 'mobile'
+        });
     </script> 
     
     {{-- CDN JS --}}

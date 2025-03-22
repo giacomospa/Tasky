@@ -1,13 +1,13 @@
 /* Palette colori */
 :root {
     /* primary alt */
-    /* --primary: rgb(36, 35, 49); */
     --primary: rgb(10, 10, 10);
+    --primary-op: rgba(10, 10, 10, 0.1);
     --secondary: rgba(244, 246, 245);
     --accent: rgba(229, 99, 153);
     --accent-op: rgba(229, 99, 153,0.7);
     --accent2: rgb(20, 148, 184);
-    --accent2-op: rgb(20, 148, 184,0.5);
+    --accent2-op: rgba(20, 149, 184, 0.7);
 }
 /* Fonts */
 :root{
@@ -29,12 +29,23 @@ h1,h2,h3{
 .text-title{
     font-family: var(--font-primary);
 }
-/* Button in generale */
+/* Buttons in generale */
 .btn-custom{
     background-color: var(--accent);
     color: whitesmoke;
     font-weight:400;
     margin-top: 5px;
+    border-radius: 20px;
+}
+
+.btn-outline-light{
+    border-color: var(--accent);
+    font-size: small;
+    border-radius: 18px;
+}
+.btn-outline-light:hover{
+    color: var(--accent);
+    background-color: transparent;
 }
 
 /* Navbar */
@@ -87,12 +98,21 @@ h1,h2,h3{
     background-color: transparent !important;
     color: whitesmoke !important;
 }
-
+.btn-profile{
+    background-color: var(--accent2);
+    color: whitesmoke;
+    border-radius: 20px;
+}
+.btn-profile:hover{
+    background-color: transparent !important;
+    color: whitesmoke !important;
+}
 .btn-logout{
     background-color: #dc3545;
     color: whitesmoke;
     font-weight: 500;
-    border-radius: 5px;
+    border-radius: 20px;
+    
 }
 .btn-logout:hover{
     background-color: transparent !important;
@@ -100,7 +120,7 @@ h1,h2,h3{
 }
 /* Fine Navbar */
 
-/* Animazione Logo */
+/* ANIMAZIONE LOGO*/
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -119,14 +139,68 @@ h1,h2,h3{
     
 }
 
-/* Cards*/
-.card {
-    box-shadow: 10px 12px 15px 2px var(--accent2-op);
+/* BACKGROUND SITO*/
+.bg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: blur(3px);
+
+}
+.bg-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.6));
 }
 
+/* CARDS*/
+.card{
+    /* background-color: rgba(239, 239, 239); */
+    background: var(--primary-op); /* Sfondo bianco molto trasparente */
+    backdrop-filter: blur(8px); /* Crea l'effetto sfocato del vetro */
+    -webkit-backdrop-filter: blur(8px); /* Per Safari */
+    border-radius: 10px;
+    color: whitesmoke;
+}
+.card-body{
+    /* background-color: rgba(239, 239, 239); */
+    background: var(--primary-op); /* Sfondo bianco molto trasparente */
+    backdrop-filter: blur(8px); /* Crea l'effetto sfocato del vetro */
+    -webkit-backdrop-filter: blur(8px); /* Per Safari */
+    border-radius: 10px;
+}
+
+/* Cards servizi */
+.card-service{
+    box-shadow: none;
+    margin: 6%;
+    transition: transform 0.2s, 
+    box-shadow 0.5s ease-in-out; 
+}
+.card-service:hover{
+    transform:scale3d(1.01);
+    box-shadow: 12px 12px 15px  var(--accent2-op);
+}
+
+/* Cards recensioni */
 .card-review{
-    box-shadow: 10px 12px 15px 2px var(--accent-op);
-    
+    box-shadow: none;
+    margin: 6%;
+    transition: transform 0.2s, 
+    box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+}
+.card-review:hover{
+    box-shadow: 12px 12px 15px  var(--accent-op);
 }
 
 /* Hero Section */
@@ -159,11 +233,20 @@ h1,h2,h3{
 
 .title-custom{
     color: var(--accent);
+    text-shadow: 5px 2px 8px var(--accent-op);
 }
 .title-custom2{
     color: var(--accent2);
+    text-shadow: 5px 2px 8px var(--accent2);
 }
-
+.title-custom3 {
+    background: radial-gradient(circle, rgb(20, 148, 184), rgba(229, 99, 153));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    
+}
 .shadow-custom{
     box-shadow: 0px 0px 6px 3px var(--accent2);
     border-radius: 15px;
@@ -171,7 +254,7 @@ h1,h2,h3{
 
 /*CAROUSEL*/
 .about-us-bg{
-    background:linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background: transparent;
     height: 750px;
     width: 100%;
     background-size: cover;
@@ -190,14 +273,13 @@ h1,h2,h3{
     transform: translate(-50%, -50%);
     text-align: center;
     color: whitesmoke; 
+    font-size: 1.2rem;
     max-width: 100%;
-    padding: 2rem;
-    text-shadow: 10px 6px 10px black;
 }
 
 .carousel-text h2 {
-    font-weight: bold;
     margin-bottom: 1rem;
+    letter-spacing: 5px;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -218,19 +300,18 @@ h1,h2,h3{
 
 .freelance-row{
     position: relative;
-    left: -12%;
+    left: -15%;
 }
 .freelance-span{
-    text-shadow: 5px 3px 12px var(--accent-op);
-
+    text-shadow: 5px 2px 8px var(--accent-op);
 }
 .service-row{
     position: relative;
-    left: 10%;
+    left: 15%;
 }
 .service-span{
-    text-shadow: 5px 3px 12px var(--accent2);
-
+    text-shadow: 5px 2px 8px var(--accent2);
+    
 }
 .home-link{
     color: whitesmoke;
@@ -247,8 +328,4 @@ h1,h2,h3{
 .footer-position{
     position: relative;
     top: 80px;
-}
-
-.btn-outline-light{
-    border-color: var(--accent);
 }

@@ -1,14 +1,14 @@
 <x-layout>
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-2" data-aos="fade-down" data-aos-duration="1000">
+            <div class="col-12 d-flex justify-content-center " data-aos="fade-down" data-aos-duration="1000">
                 <h1>{{Auth::user()->name}}, valuta il tuo acquisto!</h1>
             </div>
         </div>
     </div>
-    <div class="container d-flex justify-content-center align-items-center mt-5" data-aos="zoom-out" data-aos-duration="1300">
+    <div class="container d-flex justify-content-center align-items-center " data-aos="zoom-out" data-aos-duration="1300">
         <div class="col mx-auto justify-content-center d-flex"> 
-            <div class="card shadow-lg border-0 rounded-4" style="max-width: 500px;">
+            <div class="card shadow-lg border-0 rounded-4 mt-5" style="max-width: 500px;">
                 <div class="card-body p-4">
                     <h2 class="text-center mb-4">Aggiungi una Recensione</h2>
                     <form method="POST" action="{{ route('store.review') }}">
@@ -19,7 +19,7 @@
                             <label class="form-label fw-bold">Valutazione:</label>
                             <div class="d-flex justify-content-center gap-3 flex-wrap">
                                 @for ($i = 1; $i <= 5; $i++)
-                                <input type="radio" name="rating" id="star{{ $i }}" value="{{ $i }}" class="btn-check" required>
+                                <input type="radio" name="rating" id="star{{ $i }}" value="{{ $i }}" class="btn-check">
                                 <label for="star{{ $i }}" class="btn btn-outline-warning fs-5 px-2">{{ str_repeat('⭐', $i) }}</label>
                                 @endfor
                             </div>
@@ -27,7 +27,7 @@
                         {{-- Sezione Commento --}}
                         <div class="mb-3">
                             <label for="comment" class="form-label fw-bold">Commento:</label>
-                            <textarea name="comment" id="comment" class="form-control rounded-3 shadow-sm" rows="4" placeholder="Scrivi la tua recensione..." required></textarea>
+                            <textarea name="comment" id="comment" class="form-control rounded-3 shadow-sm" rows="4" placeholder="Scrivi la tua recensione..."></textarea>
                         </div>
                         {{-- Messaggi di errore --}}
                         @if ($errors->any())
