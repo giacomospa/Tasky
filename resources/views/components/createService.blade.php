@@ -54,7 +54,7 @@
         </div>
         <div class="row mt-3 service-row" data-aos="fade-left" data-aos-duration="700">
             <div class="col-12 text-center">
-                <h2>e aggiungi il tuo <span class="title-custom2 service-span">Servizio</span></h2>
+                <h1>e aggiungi il tuo <span class="title-custom2 service-span">Servizio</span></h1>
             </div>
         </div>
     </div>

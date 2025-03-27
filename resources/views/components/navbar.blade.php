@@ -19,7 +19,7 @@
                     <a class="nav-link" aria-current="page" href="{{route("index.review")}}">Recensioni</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="{{route("contacts")}}">Newsletter</a>
+                    <a class="nav-link" aria-current="page" href="{{route("contacts")}}">Contattaci</a>
                 </li>
                 @guest
                 <li class="nav-item dropdown">

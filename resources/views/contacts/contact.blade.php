@@ -4,8 +4,13 @@
     @endpush
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-2" data-aos="flip-down" data-aos-duration="1300">
-                <h1>Resta Aggiornato, iscriviti:</h1>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center " data-aos="fade-right" data-aos-duration="1300">
+                    <h1>Per maggiori <span class="title-custom2">informazioni</span></h1>
+                </div>
+                <div class="col-12 d-flex justify-content-center " data-aos="fade-left" data-aos-duration="1300">
+                    <h4 class="lead fst-italic">Contattaci compilando il form</h4>
+                </div>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 @if ($errors->any())

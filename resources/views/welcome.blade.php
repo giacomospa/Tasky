@@ -14,8 +14,6 @@
         </div>
         <div id="particles-js" class="w-100 vh-100 inset-0 mb-5 "></div>
     </section>
-    {{-- AGGIUNGI SERVIZIO --}}
-    <x-createService/>
     {{-- CHI SIAMO --}}
     <section class="container-fluid p-0" id="aboutUs">
         <div class="row about-us-bg m-0">
@@ -62,8 +60,7 @@
             </div>
         </div>
     </section>
-    
-
-
+    {{-- AGGIUNGI SERVIZIO --}}
+    <x-createService/>
 </x-layout>
 

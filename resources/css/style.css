@@ -29,6 +29,12 @@ h1,h2,h3{
 .text-title{
     font-family: var(--font-primary);
 }
+.text-color{
+    color: var(--accent);
+}
+.text-color:hover{
+    color: whitesmoke;
+}
 /* Buttons in generale */
 .btn-custom{
     background-color: var(--accent);
@@ -201,6 +207,21 @@ h1,h2,h3{
 }
 .card-review:hover{
     box-shadow: 12px 12px 15px  var(--accent-op);
+}
+
+/* cards login/register */
+.card-auth{
+    background: var(--primary-op); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    color: whitesmoke;
+}
+.card-body-auth{
+    background: var(--primary-op);
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
 }
 
 /* Hero Section */
