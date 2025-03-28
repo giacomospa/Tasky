@@ -4,7 +4,7 @@
     @endpush
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-2" data-aos="fade-left" data-aos-duration="1300">
+            <div class="col-12 d-flex justify-content-center mt-2" data-aos="fade-right" data-aos-duration="1000">
                 <h1>Crea il tuo Account</h1>
             </div>
             <div class="col-12 d-flex justify-content-center">
@@ -20,7 +20,7 @@
             </div>
         </div>
     </div>
-    <div class="container" data-aos="fade-right" data-aos-duration="1300">
+    <div class="container" data-aos="fade-left" data-aos-duration="1000">
         <div class="row justify-content-center">
             <div class="col d-flex justify-content-center mt-5">
                 <div class="card card-auth shadow-lg border-0 rounded-4" style="width: 50%;">

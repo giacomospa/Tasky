@@ -23,11 +23,8 @@ particlesJS("particles-js", {
     }
 });
 
-// Colore alt
-// #6610F2
 
 // Effetto Scroll su Freccia 
-
 let arrow= document.querySelector("#arrow");
 
 arrow.addEventListener("click",()=>{

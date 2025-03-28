@@ -10,7 +10,7 @@
     </div>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-4 col-lg-6 d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-duration="1300">
+            <div class="col-12 col-md-4 col-lg-6 d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card card-auth shadow-lg border-0 rounded-4" style="width: 80%;">
                     <div class="card-body card-body-auth">
                         <form class="" wire:submit.prevent="store">

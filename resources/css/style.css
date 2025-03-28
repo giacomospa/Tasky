@@ -35,6 +35,7 @@ h1,h2,h3{
 .text-color:hover{
     color: whitesmoke;
 }
+
 /* Buttons in generale */
 .btn-custom{
     background-color: var(--accent);
@@ -193,8 +194,8 @@ h1,h2,h3{
     box-shadow 0.5s ease-in-out; 
 }
 .card-service:hover{
-    transform:scale3d(1.01);
-    box-shadow: 12px 12px 15px  var(--accent2-op);
+    /* box-shadow: 5px 5px 5px  var(--accent2-op); */
+    transform: scale(1.1);
 }
 
 /* Cards recensioni */
@@ -206,7 +207,8 @@ h1,h2,h3{
     overflow: hidden;
 }
 .card-review:hover{
-    box-shadow: 12px 12px 15px  var(--accent-op);
+    /* box-shadow: 12px 12px 15px  var(--accent-op); */
+    transform: scale(1.1);
 }
 
 /* cards login/register */

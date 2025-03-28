@@ -5,8 +5,8 @@
     <section class="container-fluid" id="hero">
         <div class="row">
             <div class="col d-flex flex-column align-items-center justify-content-center hero-content mt-5">
-                <h1 class="display-4 text-center" data-aos="zoom-in" data-aos-duration="1200">Benvenuto su <span class="title-custom">Tasky</span></h1>
-                <p class="lead text-center" data-aos="zoom-out" data-aos-duration="1200">Connetti Aziende e Freelance tech con un click </p>
+                <h1 class="display-4 text-center" data-aos="zoom-in" data-aos-duration="1000">Benvenuto su <span class="title-custom">Tasky</span></h1>
+                <p class="lead text-center" data-aos="zoom-out" data-aos-duration="1000">Connetti Aziende e Freelance tech con un click </p>
                 <div class="scroll-down" id="arrow">
                     <i class="bi bi-arrow-down-circle "></i>
                 </div>
@@ -17,7 +17,7 @@
     {{-- CHI SIAMO --}}
     <section class="container-fluid p-0" id="aboutUs">
         <div class="row about-us-bg m-0">
-            {{-- <img src="/media/about-us.jpg" class="w-100 h-100 position-absolute" style="object-fit: cover; z-index: -1;" alt=""> --}}
+            
             <!-- Carousel di solo testo -->
             <div id="textCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false">
                 <div class="carousel-inner">
@@ -52,11 +52,11 @@
                 </button>
                 
                 <!-- Indicatori opzionali -->
-                <div class="carousel-indicators">
+                {{-- <div class="carousel-indicators">
                     <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

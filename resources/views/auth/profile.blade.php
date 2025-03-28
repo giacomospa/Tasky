@@ -4,12 +4,12 @@
     @endpush
     <div class="container-fluid mb-5">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1300">
+            <div class="col-12 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1000">
                 <h1>
                     Ciao <span class="title-custom3">{{Auth::user()->name}} !</span>
                 </h1>
             </div>
-            <div class="col-12 d-flex justify-content-center mt-2" data-aos="fade-right" data-aos-duration="1300">
+            <div class="col-12 d-flex justify-content-center mt-2" data-aos="fade-right" data-aos-duration="1000">
                 <h4 class="lead fst-italic">
                     {{-- BENVENUTO/A a seconda del gender --}}
                     @if(Auth::user()->gender === "male")

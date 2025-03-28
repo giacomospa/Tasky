@@ -1,6 +1,6 @@
 <x-layout>
     {{-- RICORDA CHE è DIVERSO DAL CREATE SERVICE COMPONENT, è QUI SOLO PER RISERVA --}}
-    <div class="container-fluid" data-aos="flip-down" data-aos-duration="1300">
+    <div class="container-fluid" data-aos="flip-down" data-aos-duration="1000">
         <div class="row">
             <div class="col-12 d-flex justify-content-center g-5">
                 <h1>Aggiungi il tuo Servizio</h1>
@@ -33,7 +33,7 @@
                         <input type="number" class="form-control" id="price" name="price" placeholder="Inserisci il prezzo" step="0.01" min="0" required>
                     </div>
                     
-                    <button type="submit" class="btn btn-custom mt-3">Aggiungi</button>
+                    <button type="submit" class="btn btn-outline-light mt-3">Aggiungi</button>
                 </form>
             </div>
         </div>

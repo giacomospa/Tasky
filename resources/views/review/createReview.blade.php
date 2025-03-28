@@ -6,7 +6,7 @@
             </div>
         </div>
     </div>
-    <div class="container d-flex justify-content-center align-items-center " data-aos="zoom-out" data-aos-duration="1300">
+    <div class="container d-flex justify-content-center align-items-center " data-aos="zoom-out" data-aos-duration="1000">
         <div class="col mx-auto justify-content-center d-flex"> 
             <div class="card shadow-lg border-0 rounded-4 mt-5" style="max-width: 500px;">
                 <div class="card-body p-4">
