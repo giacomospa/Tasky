@@ -17,28 +17,35 @@
     {{-- CHI SIAMO --}}
     <section class="container-fluid p-0" id="aboutUs">
         <div class="row about-us-bg m-0">
-            
-            <!-- Carousel di solo testo -->
-            <div id="textCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false">
+            <!-- Carousel con contenuto semplificato -->
+            <div id="textCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="carousel-text">
-                            <h2 class="title-custom2 display-5">Chi siamo</h2>
-                            <p class="py-4">Benvenuti su Tasky, la piattaforma che connette aziende e freelance del settore tech con chi cerca servizi innovativi e professionali.</p>
+                        <div class="carousel-text text-center px-4">
+                            <i class="bi bi-laptop-fill fs-1 mb-3 d-block"></i>
+                            <h2 class="title-custom3 display-5 fw-bold">Il marketplace dei talenti tech</h2>
+                            <p class="py-3 mx-aut" style="max-width: 700px;">La piattaforma semplice e diretta che permette ai freelancer tech di vendere i propri servizi professionali.</p>
+                            <a href="{{route('index')}}" class="btn btn-outline-light mt-2">Esplora i servizi</a>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="carousel-text">
-                            <h2 class="title-custom2 display-5">La nostra missione</h2>
-                            <p class="py-4">La nostra missione è offrire uno spazio digitale intuitivo e accessibile, dove professionisti e imprese possano presentare i propri servizi e crescere.</p>
+                        <div class="carousel-text text-center px-4">
+                            <i class="bi bi-person-workspace fs-1 mb-3 d-block"></i>
+                            <h2 class="title-custom3 display-5 fw-bold">Per freelancer tech</h2>
+                            <p class="py-3 mx-auto" style="max-width: 700px;">Sei uno sviluppatore, designer o esperto tech? Tasky ti offre uno spazio per proporre i tuoi servizi e raggiungere nuovi clienti.</p>
+                            <a href="{{route('create.service')}}" class="btn btn-outline-light mt-2">Inizia a vendere</a>
                         </div>
                     </div>
+                    @guest
                     <div class="carousel-item">
-                        <div class="carousel-text">
-                            <h2 class="title-custom2 display-5">Per chi è Tasky</h2>
-                            <p class="py-4">Che tu sia un'azienda in cerca di talenti o un freelance pronto a mettere in mostra le tue competenze, Tasky è il posto giusto per espandere la tua rete.</p>
+                        <div class="carousel-text text-center px-4">
+                            <i class="bi bi-rocket-takeoff-fill fs-1 mb-3 d-block"></i>
+                            <h2 class="title-custom3 display-5 fw-bold">Semplice ed efficace</h2>
+                            <p class="py-3 mx-auto" style="max-width: 700px;">Crea il tuo profilo, pubblica i tuoi servizi tech e inizia subito a ricevere richieste. Niente complicazioni, solo risultati.</p>
+                            <a href="{{route('register')}}" class="btn btn-outline-light mt-2">Registrati subito</a>
                         </div>
                     </div>
+                    @endguest
                 </div>
                 
                 <!-- Controlli carousel -->
@@ -51,16 +58,25 @@
                     <span class="visually-hidden">Successivo</span>
                 </button>
                 
-                <!-- Indicatori opzionali -->
-                {{-- <div class="carousel-indicators">
+                <!-- Indicatori attivati -->
+                <div class="carousel-indicators">
                     <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div> --}}
+                </div>
             </div>
         </div>
     </section>
+    
+    <!-- Aggiungi Bootstrap Icons nel tuo head -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"> -->
+    
+    <!-- Aggiungi Bootstrap Icons nel tuo head -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"> -->
+    
+    <!-- Aggiungi Bootstrap Icons nel tuo head -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"> -->
     {{-- AGGIUNGI SERVIZIO --}}
-    <x-createService/>
+    {{-- <x-createService/> --}}
 </x-layout>
 

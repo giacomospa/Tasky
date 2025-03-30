@@ -23,6 +23,7 @@
     <div class="bg-overlay">
         <img src="/media/wp-tasky.jpg" alt="immagine di sfondo">
     </div>
+    
     {{-- Navbar compon --}}
     <x-navbar/>
     

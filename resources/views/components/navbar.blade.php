@@ -16,6 +16,9 @@
                     <a class="nav-link" href="{{route("index")}}">Esplora</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{route("create.service")}}">Vendi</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="{{route("index.review")}}">Recensioni</a>
                 </li>
                 <li class="nav-item">

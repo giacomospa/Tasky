@@ -1,9 +1,12 @@
 <x-layout>
+    @auth
     <div class="container-fluid mt-4">
         <div class="row">
-            <div class="col g-5 d-flex flex-column align-items-center">
-                <h1 data-aos="fade-right" data-aos-duration="1000">Aggiungi il tuo Servizio</h1>
-                <div data-aos="fade-left" data-aos-duration="1000" class="border-custom"></div>
+            <div class="col-12 d-flex justify-content-center " data-aos="fade-right" data-aos-duration="1000">
+                <h1>Inizia subito a  <span class="title-custom">Vendere</span></h1>
+            </div>
+            <div class="col-12 d-flex justify-content-center " data-aos="fade-left" data-aos-duration="1000">
+                <h4 class="lead fst-italic">Aggiungi qui il tuo servizio</h4>
             </div>
         </div>
         <div class="row mt-5">
@@ -62,6 +65,7 @@
             </div>
         </div>
     </div>
+    @endauth
 </x-layout>
 
 
