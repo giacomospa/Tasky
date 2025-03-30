@@ -1,15 +1,15 @@
 <footer class="text-light py-4 mt-5 py-5">
     <div class="container footer-position">
-        <div class="row">
+        <div class="row justify-content-evenly">
             <!-- Logo e descrizione -->
             <div class="col-12 col-md-4 mb-4 mb-md-0">
-                <h5 class="title-custom mb-3">Tasky</h5>
-                <p class="small">Connetti Aziende e Freelance tech con un click 🚀</p>
-                <div class="mt-3">
-                    <a href="#" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
-                    <a href="#" class="text-light me-3"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="text-light"><i class="bi bi-github"></i></a>
+                <h5 class="text-color mb-3">Tasky</h5>
+                <p class="mt-4 small">Metti in vetrina il tuo talento tech 🚀</p>
+                <div class="mt-4">
+                    <a href="#" class="text-light fs-3 p-1 me-3"><i class="bi bi-facebook bi-hover"></i></a>
+                    <a href="#" class="text-light me-3 fs-3 p-1"><i class="bi bi-twitter-x bi-hover"></i></a>
+                    <a href="#" class="text-light me-3 fs-3 p-1"><i class="bi bi-instagram bi-hover"></i></a>
+                    <a href="#" class="text-light me-3 fs-3 p-1"><i class="bi bi-linkedin bi-hover"></i></a>
                 </div>
             </div>
             
@@ -26,7 +26,7 @@
             </div>
             
             <!-- Informazioni -->
-            <div class="col-6 col-md-2 mb-3">
+            {{-- <div class="col-6 col-md-2 mb-3">
                 <h6 class="mb-3">Informazioni</h6>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQ</a></li>
@@ -35,14 +35,14 @@
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Cookie</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Contatti</a></li>
                 </ul>
-            </div>
+            </div> --}}
             
             <!-- Newsletter -->
             <div class="col-12 col-md-4 mb-3">
-                <h6 class="mb-3">Resta aggiornato</h6>
-                <p class="small">Iscriviti alla nostra newsletter per ricevere aggiornamenti e offerte speciali.</p>
+                <h6 class="mb-3">Per saperne di più</h6>
+                <p class="small">Per maggiori informazioni sulla vendita o acquisto dei servizi ci contatti pure mediante il nostro form</p>
                 <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                    <a href="{{ route('contacts') }}" class="btn btn-outline-light">Iscriviti</a>
+                    <a href="{{ route('contacts') }}" class="btn btn-outline-light">Contattaci</a>
                 </div>
             </div>
             

@@ -35,6 +35,9 @@ h1,h2,h3{
 .text-color:hover{
     color: whitesmoke;
 }
+.text-color-foot{
+    color: var(--accent2);
+}
 .text-color2{
     color: var(--accent2);
 }
@@ -358,10 +361,15 @@ h1,h2,h3{
 
 /* FOOTER */
 .border-color{
-    border-color: var(--accent) !important;
+    border-color: var(--accent-op) !important;
 }
 
 .footer-position{
     position: relative;
     top: 80px;
+}
+
+.bi-hover:hover{
+    color: var(--accent);
+    transform: scale(1.2);
 }

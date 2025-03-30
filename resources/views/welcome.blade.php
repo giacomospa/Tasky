@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col d-flex flex-column align-items-center justify-content-center hero-content mt-5">
                 <h1 class="display-4 text-center" data-aos="zoom-in" data-aos-duration="1000">Benvenuto su <span class="title-custom">Tasky</span></h1>
-                <p class="lead text-center" data-aos="zoom-out" data-aos-duration="1000">Connetti Aziende e Freelance tech con un click </p>
+                <p class="lead text-center" data-aos="zoom-out" data-aos-duration="1000">Metti in vetrina il tuo talento tech</p>
                 <div class="scroll-down" id="arrow">
                     <i class="bi bi-arrow-down-circle "></i>
                 </div>
@@ -58,7 +58,7 @@
                     <span class="visually-hidden">Successivo</span>
                 </button>
                 
-                <!-- Indicatori attivati -->
+                <!-- Indicatori -->
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -68,15 +68,5 @@
         </div>
     </section>
     
-    <!-- Aggiungi Bootstrap Icons nel tuo head -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"> -->
-    
-    <!-- Aggiungi Bootstrap Icons nel tuo head -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"> -->
-    
-    <!-- Aggiungi Bootstrap Icons nel tuo head -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"> -->
-    {{-- AGGIUNGI SERVIZIO --}}
-    {{-- <x-createService/> --}}
 </x-layout>
 

@@ -3,6 +3,9 @@
     {{$service->name}}
     @endpush
     <div class="container-fluid">
+        <div class="ms-5">
+            <a href="{{route('index')}}" <i class="bi bi-arrow-left-circle fs-2 mb-1 text-color"></i></a>
+        </div>
         <div class="row">
             <div class="col-12 d-flex justify-content-center" data-aos="flip-up" data-aos-duration="1000">
                 <h1>Scheda dettagli</h1>
@@ -34,12 +37,6 @@
                 </button>
                 @endif
             </div>
-        </div>
-    </div>
-    <div class="row mt-4">
-        <div class="col d-flex flex-column align-items-center">
-            <a href="{{route('index')}}" <i class="bi bi-arrow-left-circle fs-2 mb-1 text-color2"></i></a>
-            <h5 class="lead fst-italic">Tutti i servizi</h5>
         </div>
     </div>
     <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true" tabindex="-1">
