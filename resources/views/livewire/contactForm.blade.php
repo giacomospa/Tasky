@@ -13,11 +13,12 @@
             <div class="col-12 col-md-4 col-lg-6 d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card card-auth shadow-lg border-0 rounded-4" style="width: 80%;">
                     <div class="card-body card-body-auth">
-                        <form class="" wire:submit.prevent="store">
+                        <form wire:submit.prevent="store">
                             @csrf
                             <div class="mb-3">
                                 <label class="form-label">Username</label>
                                 <input type="text" class="form-control" placeholder="Mario Rossi" wire:model="name">
+                                @error('name') <span class="text-red-500">{{ $message }}</span> @enderror
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Indirizzo email</label>

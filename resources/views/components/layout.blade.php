@@ -21,7 +21,7 @@
 <body>
     {{-- SFONDO --}}
     <div class="bg-overlay">
-        <img src="/media/sfondo-def.jpg" alt="immagine di sfondo">
+        <img src="/media/wp-tasky.jpg" alt="immagine di sfondo">
     </div>
     {{-- Navbar compon --}}
     <x-navbar/>

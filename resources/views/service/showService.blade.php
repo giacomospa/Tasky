@@ -9,32 +9,30 @@
             </div>
         </div>
     </div>
-    <div class="container mt-5">
-        <div class="row  justify-content-center">
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" data-aos="zoom-in" data-aos-duration="1000">
-                <div class="card border-0 card-service" style="width: 18rem;">
-                    <img src="{{ $service->img ? Storage::url($service->img) : asset('images/service.jpg') }}" class="card-img-top" alt="Immagine servizio">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h5 class="card-title fw-bold text-center">{{$service->name}}</h5>
-                        <p class="card-text text-center">{{$service->description}}</p>
-                        <h6 class="card-title fw-semibold">€ {{$service->price}}</h6>
-                        <h6 class="card-text fw-medium">Producer: {{$service->producer}}</h6>
-                        @if($service->user_id !== Auth::user()->id)
-                        <a href="#" class="btn btn-outline-light mt-3 btn-sm">Richiedi</a>
-                        <a href="{{route("create.review",['service_id' => $service->id])}}" class="btn btn-outline-light btn-sm mt-1">Valuta</a>
-                        @endif
-                        @if($service->user_id === Auth::user()->id)
-                        <a href="{{route("edit.service",compact("service"))}}" class="btn btn-outline-light btn-sm mt-3">Modifica</a>
-                        @endif
-                        @if($service->user_id === Auth::user()->id)
-
-                        <!-- Bottone per aprire la modale -->
-                        <button type="button" class="btn btn-outline-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#deleteModal" data-service-id="{{ $service->id }}">
-                            Elimina
-                        </button>
-                        @endif
-                    </div>
-                </div>
+    <div class="container py-5 mt-4">
+        <div class="row g-0 justify-content-evenly" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="col-5">
+                <img src="{{ $service->img ? Storage::url($service->img) : asset('images/service.jpg') }}" class="w-100 h-100 object-fit-cover" alt="Immagine servizio">
+            </div>
+            <div class="col-4 p-4">
+                <h5 class="card-title fw-bold">{{$service->name}}</h5>
+                <p class="card-text mt-4">{{$service->description}}</p>
+                <h6 class="card-title fw-semibold mt-4">€ {{$service->price}}</h6>
+                <h6 class="card-text fw-medium mt-4">Producer: {{$service->producer}}</h6>
+                @if($service->user_id !== Auth::user()->id)
+                <a href="#" class="btn btn-outline-light mt-5 btn-sm">Richiedi</a>
+                <a href="{{route("create.review",['service_id' => $service->id])}}" class="btn btn-outline-light btn-sm mt-5 ms-3">Valuta</a>
+                @endif
+                @if($service->user_id === Auth::user()->id)
+                <a href="{{route("edit.service",compact("service"))}}" class="btn btn-outline-light btn-sm mt-5">Modifica</a>
+                @endif
+                @if($service->user_id === Auth::user()->id)
+                
+                <!-- Bottone per aprire la modale -->
+                <button type="button" class="btn btn-outline-light btn-sm mt-5 ms-2" data-bs-toggle="modal" data-bs-target="#deleteModal" data-service-id="{{ $service->id }}">
+                    Elimina
+                </button>
+                @endif
             </div>
         </div>
     </div>

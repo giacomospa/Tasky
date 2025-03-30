@@ -1,6 +1,6 @@
 <x-layout>
     @push('title')
-        Newsletter
+        Contattaci
     @endpush
     <div class="container">
         <div class="row">
