@@ -5,7 +5,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 d-flex justify-content-center" data-aos="flip-up" data-aos-duration="1000">
-                <h1>{{$service->name}}</h1>
+                <h1>Scheda dettagli</h1>
             </div>
         </div>
     </div>
@@ -18,7 +18,7 @@
                 <h5 class="card-title fw-bold">{{$service->name}}</h5>
                 <p class="card-text mt-4">{{$service->description}}</p>
                 <h6 class="card-title fw-semibold mt-4">€ {{$service->price}}</h6>
-                <h6 class="card-text fw-medium mt-4">Producer: {{$service->producer}}</h6>
+                <h6 class="card-text mt-4">Producer: <span class="fw-bold"> {{$service->producer}}</span></h6>
                 @if($service->user_id !== Auth::user()->id)
                 <a href="#" class="btn btn-outline-light mt-5 btn-sm">Richiedi</a>
                 <a href="{{route("create.review",['service_id' => $service->id])}}" class="btn btn-outline-light btn-sm mt-5 ms-3">Valuta</a>
@@ -34,6 +34,12 @@
                 </button>
                 @endif
             </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col d-flex flex-column align-items-center">
+            <a href="{{route('index')}}" <i class="bi bi-arrow-left-circle fs-2 mb-1 text-color2"></i></a>
+            <h5 class="lead fst-italic">Tutti i servizi</h5>
         </div>
     </div>
     <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true" tabindex="-1">

@@ -35,6 +35,12 @@ h1,h2,h3{
 .text-color:hover{
     color: whitesmoke;
 }
+.text-color2{
+    color: var(--accent2);
+}
+.text-color2:hover{
+    color: whitesmoke
+}
 
 /* Buttons in generale */
 .btn-custom{

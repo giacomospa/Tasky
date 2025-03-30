@@ -69,7 +69,7 @@ class ServiceController extends Controller implements HasMiddleware
     /**
     * Display the specified resource.
     */
-    public function show(Service $service)
+    public function show(Service $service) 
     {
         return view("service/showService",compact("service"));
     }
