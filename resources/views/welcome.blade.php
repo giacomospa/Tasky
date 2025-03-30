@@ -18,7 +18,7 @@
     <section class="container-fluid p-0" id="aboutUs">
         <div class="row about-us-bg m-0">
             <!-- Carousel con contenuto semplificato -->
-            <div id="textCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover">
+            <div id="textCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="carousel-text text-center px-4">

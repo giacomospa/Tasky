@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg mb-4 px-4">
+<nav class="navbar navbar-expand-lg mb-5 px-5 ">
     <div class="container-fluid">
         <a class="navbar-brand text-tasky" href="{{route("homepage")}}" id="logo">
             {{-- LOGO --}}

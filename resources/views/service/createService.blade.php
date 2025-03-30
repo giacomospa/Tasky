@@ -1,4 +1,7 @@
 <x-layout>
+    @push('title')
+    Vendi
+    @endpush
     @auth
     <div class="container-fluid mt-4">
         <div class="row">

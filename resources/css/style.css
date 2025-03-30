@@ -65,6 +65,16 @@ h1,h2,h3{
 }
 
 /* Navbar */
+
+.navbar {
+    background-color: var(--dark-bg, #12121200);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+    transition: all 0.3s ease;
+    backdrop-filter: blur(15px); 
+}
+
+
 .text-tasky{
     color: var(--accent);
     font-weight: 600;
@@ -74,12 +84,16 @@ h1,h2,h3{
 .text-tasky:hover{
     color: var(--secondary);
 }
-.nav-link{
+.navbar .nav-link{
     color: var(--secondary);
+    position: relative;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
-.nav-link:hover{
+.navbar .nav-link:hover {
     color: var(--accent);
+    transform: translateY(-2px);
+    border-bottom: 0.5px solid var(--accent);
 }
 
 .nav-link:active, 
@@ -369,7 +383,13 @@ h1,h2,h3{
     top: 80px;
 }
 
-.bi-hover:hover{
+
+.bi-hover {
+    transition: transform 0.3s ease-in-out; /* Effetto fluido */
+}
+
+.bi-hover:hover {
+    transform: scale(1.2); /* Ingrandisce l'icona del 20% */
     color: var(--accent);
-    transform: scale(1.2);
+
 }
