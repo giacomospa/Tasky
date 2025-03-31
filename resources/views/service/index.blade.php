@@ -43,6 +43,10 @@
             </div>
         </div>
         @endforeach
+        {{-- Paginator --}}
+        <div class="d-flex justify-content-center mt-5 paginator">
+            {{$services->links()}}
+        </div>
     </div>
 </div>
 </x-layout>

@@ -23,7 +23,7 @@ class ServiceController extends Controller implements HasMiddleware
     */
     public function index()
     {
-        $services= Service::all();
+        $services= Service::paginate(6);
         return view("service/index",compact("services"));
     }
     

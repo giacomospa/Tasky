@@ -17,7 +17,7 @@
             <div class="col-12 col-md-4">
                 <img src="{{ $service->img ? Storage::url($service->img) : asset('images/service.jpg') }}" class="w-100 h-100 object-fit-cover" alt="Immagine servizio">
             </div>
-            <div class="col-12 col-md-4 p-2 mt-2">
+            <div class="col-12 col-md-4 p-2 mt-2 text-center text-md-start">
                 <h5 class="card-title fw-bold">{{$service->name}}</h5>
                 <p class="card-text mt-4">{{$service->description}}</p>
                 <h6 class="card-title fw-semibold mt-4">€ {{$service->price}}</h6>

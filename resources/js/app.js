@@ -13,11 +13,11 @@ window.addEventListener("DOMContentLoaded", () => {
 particlesJS("particles-js", {
     "particles": {
         "number": { "value": 80 },  // Numero di particelle
-        "size": { "value": 3 },     // Dimensione delle particelle
+        "size": { "value": 2 },     // Dimensione delle particelle
         "move": { "speed": 3 },     // Velocità di movimento
         "line_linked": {
             "enable": true,         // Connessione tra le particelle
-            "distance": 180,        // Distanza massima tra particelle per collegarsi
+            "distance": 200,        // Distanza massima tra particelle per collegarsi
             "color": "#1494b8"
         }
     }

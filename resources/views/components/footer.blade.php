@@ -17,11 +17,11 @@
             <div class="col-6 text-center text-md-start col-md-2 mb-3">
                 <h6 class="mb-3 fw-bolder">Naviga</h6>
                 <ul class="nav flex-column small">
-                    <li class="nav-item mb-2"><a href="{{route("homepage")}}" class="nav-link p-0 text-light">Home</a></li>
-                    <li class="nav-item mb-2"><a href="{{route("homepage")}}" class="nav-link p-0 text-light">Chi siamo</a></li>
-                    <li class="nav-item mb-2"><a href="{{route("index")}}" class="nav-link p-0 text-light">Servizi</a></li>
-                    @guest<li class="nav-item mb-2"><a href="{{route("register")}}" class="nav-link p-0 text-light">Crea il tuo Account</a></li>@endguest
-                    <li class="nav-item mb-2"><a href="{{route("index.review")}}" class="nav-link p-0 text-light">Recensioni</a></li>
+                    <li class="nav-item mb-2"><a href="{{route("homepage")}}" class="nav-link p-0 foot-item">Home</a></li>
+                    <li class="nav-item mb-2"><a href="{{route("homepage")}}" class="nav-link p-0 foot-item">Chi siamo</a></li>
+                    <li class="nav-item mb-2"><a href="{{route("index")}}" class="nav-link p-0 foot-item">Servizi</a></li>
+                    <li class="nav-item mb-2"><a href="{{route("index.review")}}" class="nav-link p-0 foot-item">Recensioni</a></li>
+                    @guest<li class="nav-item mb-2"><a href="{{route("register")}}" class="nav-link p-0 foot-item">Crea il tuo Account</a></li>@endguest
                 </ul>
             </div>
             
@@ -41,8 +41,8 @@
             <div class="col-8 text-center text-md-start col-md-4 mb-3">
                 <h6 class="mb-3 fw-bolder">Per saperne di più</h6>
                 <p class="small">Per maggiori informazioni sulla vendita o acquisto dei servizi ci contatti pure mediante il nostro form</p>
-                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                    <a href="{{ route('contacts') }}" class="btn btn-outline-light">Contattaci</a>
+                <div class="d-flex flex-column flex-sm-row gap-2">
+                    <a href="{{ route('contacts') }}" class="btn btn-outline-light ">Contattaci</a>
                 </div>
             </div>
             

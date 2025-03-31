@@ -11,8 +11,8 @@
                     <i class="bi bi-arrow-down-circle "></i>
                 </div>
             </div>
+            <div id="particles-js" class="w-100 vh-100"></div>
         </div>
-        <div id="particles-js" class="w-100 vh-100 inset-0 mb-5"></div>
     </section>
     {{-- CHI SIAMO --}}
     <section class="container-fluid p-0" id="aboutUs">

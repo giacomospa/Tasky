@@ -52,6 +52,10 @@
                 </div>
             </div>
             @endforeach
+            {{-- Paginator --}}
+            <div class="d-flex justify-content-center mt-5 paginator">
+                {{$reviews->links()}}
+            </div>
         </div>
         
         <!-- Paginatore Bootstrap -->

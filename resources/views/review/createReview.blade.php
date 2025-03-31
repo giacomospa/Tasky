@@ -1,7 +1,10 @@
 <x-layout>
+    @push('title')
+    Inserisci Recensione
+    @endpush
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center " data-aos="fade-down" data-aos-duration="1000">
+            <div class="col-12 d-flex justify-content-center text-center" data-aos="fade-down" data-aos-duration="1000">
                 <h1>{{Auth::user()->name}}, valuta il tuo acquisto!</h1>
             </div>
         </div>
@@ -40,7 +43,7 @@
                         </div>
                         @endif
                         <div class="d-grid mt-4">
-                            <button type="submit" class="btn btn-custom w-50 fw-bold rounded-pill mx-auto">Invia Recensione</button>
+                            <button type="submit" class="btn btn-outline-light fw-bold rounded-pill mx-auto">Invia Recensione</button>
                         </div>
                     </form>
                 </div>

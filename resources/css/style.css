@@ -229,6 +229,52 @@ h1,h2,h3{
     border-radius: 10px;
 }
 
+/* PAGINATOR */
+/* Stile base per tutti gli elementi della paginazione */
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 1rem ;
+    font-family: "Orbitron", serif;
+}
+.pagination li a {
+    background-color: whitesmoke;
+    color: #333 !important;
+    border: none;
+    padding: 6px 12px;
+    margin: 0 4px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.pagination li a:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+.pagination li.active span {
+    background-color: var(--accent2) !important;
+    color: white !important;
+    border: none;
+    padding: 6px 12px;
+    margin: 0 4px;
+    border-radius: 4px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.pagination li.disabled span {
+    background-color: #f8f8f8;
+    color: #ccc !important;
+    border: none;
+    padding: 6px 12px;
+    margin: 0 4px;
+    border-radius: 4px;
+    cursor: not-allowed;
+}
+
 /*HERO SECTION*/
 #hero{
     position: relative;
@@ -322,6 +368,12 @@ h1,h2,h3{
     transform: scale(1.2); /* Ingrandisce l'icona del 20% */
     color: var(--accent);
 }
+.foot-item{
+    color: whitesmoke;
+}
+.foot-item:hover{
+    color: var(--accent);
+}
 
 /* MEDIA QUERY */
 
@@ -336,13 +388,21 @@ h1,h2,h3{
         color: inherit;
         border-bottom: none;
     }
-    .carousel-text{
-        font-size: smaller;
-    }
     .btn-outline-light{
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
     .border-color-foot{
         width: 90%;
+    }
+    .foot-item:hover{
+        color: inherit;
+    }
+    .bg-overlay{
+        background: none !important;
+    }
+    img{
+        width: 900px;
+        height: 700px;
+        background-size: cover;
     }
 }
