@@ -9,9 +9,9 @@
             </div>
         </div>
     </div>
-    <div class="container mt-5">
+    <div class="container-fluid mt-5">
         <div class="row justify-content-center">
-            <div class="col-6" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="card card-auth shadow-lg border-0 rounded-4" style="width: 100%;">
                     <div class="card-body card-body-auth">
                         <form method="POST" action="{{route("update.service",$service->id)}}" enctype="multipart/form-data">

@@ -23,7 +23,7 @@
             </div>
         </div>
     </div>
-    <div class="container mt-5 py-4">
+    <div class="container mt-3 ">
         <div class="row g-4 justify-content-center">
             @foreach ($reviews as $review)
             <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" data-aos="fade-up"  data-aos-duration="1000">

@@ -6,13 +6,13 @@
         <div class="row">
             <div class="col d-flex flex-column align-items-center justify-content-center hero-content mt-5">
                 <h1 class="display-4 text-center" data-aos="zoom-in" data-aos-duration="1000">Benvenuto su <span class="title-custom">Tasky</span></h1>
-                <p class="lead text-center" data-aos="zoom-out" data-aos-duration="1000">Metti in vetrina il tuo talento tech</p>
+                <p class="lead text-center fst-italic" data-aos="zoom-out" data-aos-duration="1000">Metti in vetrina il tuo talento tech</p>
                 <div class="scroll-down" id="arrow">
                     <i class="bi bi-arrow-down-circle "></i>
                 </div>
             </div>
         </div>
-        <div id="particles-js" class="w-100 vh-100 inset-0 mb-5 "></div>
+        <div id="particles-js" class="w-100 vh-100 inset-0 mb-5"></div>
     </section>
     {{-- CHI SIAMO --}}
     <section class="container-fluid p-0" id="aboutUs">
@@ -24,7 +24,7 @@
                         <div class="carousel-text text-center px-4">
                             <i class="bi bi-laptop-fill fs-1 mb-3 d-block"></i>
                             <h2 class="title-custom3 display-5 fw-bold">Il marketplace dei talenti tech</h2>
-                            <p class="py-3 mx-aut" style="max-width: 700px;">La piattaforma semplice e diretta che permette ai freelancer tech di vendere i propri servizi professionali.</p>
+                            <p class="py-3 mx-auto" style="max-width: 700px;">La piattaforma semplice e diretta che permette ai freelancer tech di vendere i propri servizi professionali.</p>
                             <a href="{{route('index')}}" class="btn btn-outline-light mt-2">Esplora i servizi</a>
                         </div>
                     </div>

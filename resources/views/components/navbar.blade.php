@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg mb-5 px-5 ">
+<nav class="navbar navbar-expand-lg mb-5 px-md-3 ">
     <div class="container-fluid">
-        <a class="navbar-brand text-tasky" href="{{route("homepage")}}" id="logo">
-            {{-- LOGO --}}
+        {{-- LOGO --}}
+        <a class="navbar-brand text-tasky m-0 p-0" href="{{route("homepage")}}" id="logo">
             <x-logo/>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

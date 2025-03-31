@@ -4,7 +4,7 @@
     @endpush
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-2" data-aos="fade-right" data-aos-duration="1000">
+            <div class="col-12 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="1000">
                 <h1>Crea il tuo Account</h1>
             </div>
             <div class="col-12 d-flex justify-content-center">
@@ -22,8 +22,8 @@
     </div>
     <div class="container" data-aos="fade-left" data-aos-duration="1000">
         <div class="row justify-content-center">
-            <div class="col d-flex justify-content-center mt-5">
-                <div class="card card-auth shadow-lg border-0 rounded-4" style="width: 50%;">
+            <div class="col-12 col-md-6 d-flex justify-content-center mt-3">
+                <div class="card card-auth shadow-lg border-0 rounded-4" style="width: 90%;">
                     <div class="card-body card-body-auth">
                         <form method="POST" action="{{route("register")}}">
                             @csrf
@@ -60,7 +60,7 @@
                                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Conferma la tua password" name="password_confirmation">
                                 </div>
                                 <button type="submit" class="btn btn-outline-light">Registrati</button>
-                                <h5 class="lead fs-6 d-flex justify-content-end mt-2">Hai già un account? <a class="text-color text-decoration-none ms-1" href="{{route('login')}}">Accedi</a></h5>
+                                <h5 class="lead fs-6 d-flex justify-content-end mt-4">Hai già un account? <a class="text-color text-decoration-none ms-1" href="{{route('login')}}">Accedi</a></h5>
                             </div>
                         </form>
                         

@@ -1,7 +1,7 @@
 <div>
-    <div class="container mt-4">
+    <div class="container">
         <div class="row">
-            <div class="col 12 w-50 justify-content-center d-flex">
+            <div class="col-12 w-50 justify-content-center d-flex">
                 @if ($success)
                 <div class="alert alert-success">Messaggio inviato con successo!</div>
                 @endif
@@ -10,8 +10,8 @@
     </div>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-4 col-lg-6 d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-duration="1000">
-                <div class="card card-auth shadow-lg border-0 rounded-4" style="width: 80%;">
+            <div class="col-12 col-md-4 col-lg-6 d-flex justify-content-center mt-3" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card card-auth shadow-lg border-0 rounded-4" style="width: 90%;">
                     <div class="card-body card-body-auth">
                         <form wire:submit.prevent="store">
                             @csrf

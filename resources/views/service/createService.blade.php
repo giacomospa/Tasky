@@ -3,18 +3,18 @@
     Vendi
     @endpush
     @auth
-    <div class="container-fluid mt-4">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center " data-aos="fade-right" data-aos-duration="1000">
+            <div class="col-12 d-flex justify-content-center text-center" data-aos="fade-right" data-aos-duration="1000">
                 <h1>Inizia subito a  <span class="title-custom">Vendere</span></h1>
             </div>
-            <div class="col-12 d-flex justify-content-center " data-aos="fade-left" data-aos-duration="1000">
+            <div class="col-12 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1000">
                 <h4 class="lead fst-italic">Aggiungi qui il tuo servizio</h4>
             </div>
         </div>
-        <div class="row mt-5">
-            <div class="col justify-content-center d-flex" data-aos="fade-up" data-aos-duration="1000">
-                <div class="card card-auth shadow-lg border-0 rounded-4" style="width: 50%;">
+        <div class="row mt-3">
+            <div class="col-12 justify-content-center d-flex" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card card-auth shadow-lg border-0 rounded-4" >
                     <div class="card-body card-body-auth">
                         <form method="POST" action="{{route("service.store")}}" enctype="multipart/form-data">
                             @csrf

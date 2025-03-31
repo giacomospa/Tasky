@@ -3,21 +3,21 @@
     {{$service->name}}
     @endpush
     <div class="container-fluid">
-        <div class="ms-5">
+        <div class="ms-md-4">
             <a href="{{route('index')}}" <i class="bi bi-arrow-left-circle fs-2 mb-1 text-color"></i></a>
         </div>
-        <div class="row">
+        <div class="row mt-4">
             <div class="col-12 d-flex justify-content-center" data-aos="flip-up" data-aos-duration="1000">
                 <h1>Scheda dettagli</h1>
             </div>
         </div>
     </div>
-    <div class="container py-5 mt-4">
+    <div class="container py-5 mt-md-5">
         <div class="row g-0 justify-content-evenly" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="col-5">
+            <div class="col-12 col-md-4">
                 <img src="{{ $service->img ? Storage::url($service->img) : asset('images/service.jpg') }}" class="w-100 h-100 object-fit-cover" alt="Immagine servizio">
             </div>
-            <div class="col-4 p-4">
+            <div class="col-12 col-md-4 p-2 mt-2">
                 <h5 class="card-title fw-bold">{{$service->name}}</h5>
                 <p class="card-text mt-4">{{$service->description}}</p>
                 <h6 class="card-title fw-semibold mt-4">€ {{$service->price}}</h6>

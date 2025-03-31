@@ -28,7 +28,7 @@
     <div class="container mt-5">
         @livewire('service-filter')
     </div> --}}
-    <div class="container mt-5">
+    <div class="container mt-3">
         <div class="row g-4 justify-content-center">
             @foreach ($services as $service)
             <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" data-aos="fade-up"

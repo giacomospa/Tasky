@@ -1,4 +1,4 @@
-/* Palette colori */
+/* PALETTE*/
 :root {
     /* primary alt */
     --primary: rgb(10, 10, 10);
@@ -9,13 +9,14 @@
     --accent2: rgb(20, 148, 184);
     --accent2-op: rgba(20, 149, 184, 0.7);
 }
-/* Fonts */
+
+/* FONTS*/
 :root{
     --font-primary: "Orbitron", serif;
     --font-secondary: "Montserrat", serif;
 }
 
-/* Basic */
+/* GENERIC*/
 body{
     overflow-x: hidden;
     background-color: var(--primary);
@@ -45,7 +46,7 @@ h1,h2,h3{
     color: whitesmoke
 }
 
-/* Buttons in generale */
+/*BUTTONS*/
 .btn-custom{
     background-color: var(--accent);
     color: whitesmoke;
@@ -53,7 +54,6 @@ h1,h2,h3{
     margin-top: 5px;
     border-radius: 20px;
 }
-
 .btn-outline-light{
     border-color: var(--accent);
     font-size: small;
@@ -64,8 +64,7 @@ h1,h2,h3{
     background-color: transparent;
 }
 
-/* Navbar */
-
+/*NAVBAR*/
 .navbar {
     background-color: var(--dark-bg, #12121200);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
@@ -73,49 +72,38 @@ h1,h2,h3{
     transition: all 0.3s ease;
     backdrop-filter: blur(15px); 
 }
-
-
 .text-tasky{
     color: var(--accent);
     font-weight: 600;
     font-style:oblique;
     font-size: 1.3rem;
 }
-.text-tasky:hover{
-    color: var(--secondary);
-}
 .navbar .nav-link{
     color: var(--secondary);
     position: relative;
     transition: color 0.3s ease, transform 0.2s ease;
 }
-
 .navbar .nav-link:hover {
     color: var(--accent);
     transform: translateY(-2px);
     border-bottom: 0.5px solid var(--accent);
 }
-
 .nav-link:active, 
 .nav-link:focus {
     color: var(--secondary) !important; 
 }
-
 .navbar-toggler-icon {
     filter: invert(1);
 }
-
 .dropdown-custom {
     background-color: transparent !important;
     border: none;  
     box-shadow: none;  
 }
-
 .dropdown-item:hover {
     background-color: transparent !important;
     color: var(--accent) !important;
 }
-
 .dropdown-item-profile{
     background-color: var(--accent2);
     color: whitesmoke;
@@ -123,7 +111,6 @@ h1,h2,h3{
     border-radius: 5px;
     width: 100%;
 }
-
 .dropdown-item-profile:hover{
     background-color: transparent !important;
     color: whitesmoke !important;
@@ -159,14 +146,8 @@ h1,h2,h3{
         opacity: 1;
     }
 }
-
 .logo-animation {
     animation: fadeIn 2s ease-in-out 1;
-}
-
-#logo:hover {
-    filter: brightness(1) invert(0); 
-    
 }
 
 /* BACKGROUND SITO*/
@@ -180,7 +161,6 @@ h1,h2,h3{
     background-position: center;
     z-index: -1;
     filter: blur(3px);
-
 }
 .bg-overlay::after {
     content: "";
@@ -191,13 +171,6 @@ h1,h2,h3{
     height: 100vh;
     background: linear-gradient(180deg, rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.5));
 }
-
-@media screen and (min-width: 320px) and (max-width: 3840px) {
-    .bg-overlay {
-        background-size: cover;
-    }
-}
-
 
 /* CARDS*/
 .card{
@@ -256,21 +229,18 @@ h1,h2,h3{
     border-radius: 10px;
 }
 
-/* Hero Section */
+/*HERO SECTION*/
 #hero{
     position: relative;
     width: 100%;
 }
-
 .hero-content{
     position: absolute;
     top: 180px;
 }
-
 .hover-custom:hover{
     color: var(--secondary) !important;
 }
-
 .scroll-down{
     font-size: 2rem;
     position: relative;
@@ -278,12 +248,10 @@ h1,h2,h3{
     animation: bounce 1.5s infinite;
     color: var(--accent);
 }
-
 @keyframes bounce{
     0% { transform: translateY(0); }
     50% { transform: translateY(13px); }
 }
-
 .title-custom{
     color: var(--accent);
     text-shadow: 5px 2px 8px var(--accent-op);
@@ -298,7 +266,6 @@ h1,h2,h3{
     background-clip: text;
     color: transparent;
     font-weight: bold;
-    
 }
 .shadow-custom{
     box-shadow: 0px 0px 6px 3px var(--accent2);
@@ -313,12 +280,10 @@ h1,h2,h3{
     background-size: cover;
     position: relative;
 }
-
 #textCarousel, .carousel-inner, .carousel-item {
     height: 100%;
     width: 100%;
 }
-
 .carousel-text {
     position: absolute;
     top: 50%;
@@ -329,67 +294,55 @@ h1,h2,h3{
     font-size: 1.2rem;
     max-width: 100%;
 }
-
 .carousel-text h2 {
     margin-bottom: 1rem;
     letter-spacing: 5px;
 }
-
 .carousel-control-prev, .carousel-control-next {
     width: 5%;
 }
-
 .carousel-indicators {
     bottom: 20px;
 }
 /* FINE CAROUSEL */
 
-/* AGGIUNGI SERVIZIO/REGISTRATI HOMEPAGE */
-.border-custom{
-    border-bottom: 2px solid var(--accent-op);
-    padding: 8px;
-    width: 50%;
-}
-
-.freelance-row{
-    position: relative;
-    left: -15%;
-}
-.freelance-span{
-    text-shadow: 5px 2px 8px var(--accent-op);
-}
-.service-row{
-    position: relative;
-    left: 15%;
-}
-.service-span{
-    text-shadow: 5px 2px 8px var(--accent2);
-    
-}
-.home-link{
-    color: whitesmoke;
-}
-.home-link:hover{
-    color: #D2F898;
-}
 
 /* FOOTER */
-.border-color{
+.border-color-foot{
     border-color: var(--accent-op) !important;
 }
-
 .footer-position{
     position: relative;
     top: 80px;
 }
-
-
 .bi-hover {
     transition: transform 0.3s ease-in-out; /* Effetto fluido */
 }
-
 .bi-hover:hover {
     transform: scale(1.2); /* Ingrandisce l'icona del 20% */
     color: var(--accent);
+}
 
+/* MEDIA QUERY */
+
+@media screen and (max-width: 767px){
+    p{
+        font-size: 1rem !important;
+    }
+    h4{
+        font-size: 1rem !important;
+    }
+    .navbar .nav-link:hover{
+        color: inherit;
+        border-bottom: none;
+    }
+    .carousel-text{
+        font-size: smaller;
+    }
+    .btn-outline-light{
+        font-size: 0.7rem;
+    }
+    .border-color-foot{
+        width: 90%;
+    }
 }

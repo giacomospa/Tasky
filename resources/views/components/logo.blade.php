@@ -1,4 +1,4 @@
-<svg width="150" height="90" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+<svg width="70" height="70" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <!-- Gradient per effetto tech -->
         <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
