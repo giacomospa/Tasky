@@ -14,11 +14,17 @@ class Service extends Model
         return $this->belongsTo(User::class);
     }
 
-    // relazione 1-N con le reviews
+    // Relazione 1-N con le reviews
     public function reviews() {
         return $this->hasMany(Review::class);
     }
-    
+ 
+    // Relazione N-N con utenti
+    public function favoriteByUsers()
+    {
+        return $this->belongsToMany(User::class);
+    }
+
 }
 
 

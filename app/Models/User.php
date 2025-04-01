@@ -60,4 +60,10 @@ class User extends Authenticatable
         return $this->hasMany(Review::class);
     }
 
+    // Relazione N-N con servizi 
+    public function favoriteService()
+    {
+        return $this->belongsToMany(Service::class);
+    }
+    
 }
