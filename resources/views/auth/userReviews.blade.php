@@ -70,6 +70,12 @@
                             <p class="card-text"><small>{{ $review->created_at->format('d/m/Y') }}</small>
                             </p>
                         </div>
+                        @if($review->user_id === Auth::user()->id)
+                        <!-- Bottone per aprire la modale -->
+                        <button type="button" class="btn btn-outline-light btn-sm mt-5 ms-2" data-bs-toggle="modal" data-bs-target="#deleteModal" data-service-id="{{ $review->id }}">
+                            Elimina
+                        </button>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -77,6 +83,28 @@
             {{-- Paginator --}}
             <div class="d-flex justify-content-center mt-5 paginator">
                 {{$reviews->links()}}
+            </div>
+        </div>
+    </div>
+    {{-- Modale conferma eliminazione recensione --}}
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content text-black">
+                <div class="modal-header">
+                    <h5 class="modal-title">Conferma Eliminazione</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Sei sicuro di voler eliminare questa recensione?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info btn-sm" data-bs-dismiss="modal">Annulla</button>
+                    <form method="POST" action="{{ route('delete.review', $review->id) }}">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger btn-sm">Elimina</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

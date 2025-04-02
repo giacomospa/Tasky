@@ -4,8 +4,8 @@
     --primary: rgb(10, 10, 10);
     --primary-op: rgba(10, 10, 10, 0.1);
     --secondary: rgba(244, 246, 245);
-    --accent: rgba(229, 99, 153);
-    --accent-op: rgba(229, 99, 153,0.7);
+    --accent: rgb(229, 99, 153);
+    --accent-op: #e56399b3;
     --accent2: rgb(20, 148, 184);
     --accent2-op: rgba(20, 149, 184, 0.7);
 }
@@ -160,7 +160,6 @@ h1,h2,h3{
     background-size: cover;
     background-position: center;
     z-index: -1;
-    filter: blur(0px);
 }
 .bg-overlay::after {
     content: "";
@@ -420,8 +419,8 @@ h1,h2,h3{
         background: none !important;
     }
     img{
-        width: 900px;
-        height: 700px;
+        width: 1000px;
+        height: 750px;
         background-size: cover;
     }
     .card-service-profile .service-overlay {

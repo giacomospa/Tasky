@@ -94,8 +94,9 @@ class ReviewController extends Controller implements HasMiddleware
     /**
     * Remove the specified resource from storage.
     */
-    public function destroy(Review $review)
+    public function delete(Review $review)
     {
-        //
+        $review->delete();
+        return redirect()->route('user.reviews')->with('success','Recensione eliminata con successo!');
     }
 }

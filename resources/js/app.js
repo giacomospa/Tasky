@@ -32,3 +32,4 @@ arrow.addEventListener("click",()=>{
     let chiSiamo = document.querySelector("#aboutUs");
     chiSiamo.scrollIntoView({ behavior: "smooth" });
 })
+

@@ -33,5 +33,7 @@ Route::get("review/createReview/{service_id}",[ReviewController::class,"create"]
 
 Route::post("review/createReview/store",[ReviewController::class,"store"])->name("store.review");
 
+Route::delete('/review/delete/{review}',[ReviewController::class,'delete'])->name('delete.review');
+
 Route::get("contacts/contact",[PublicController::class,"contacts"])->name("contacts");
 

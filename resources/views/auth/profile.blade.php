@@ -57,7 +57,7 @@
             {{-- Card Le mie recensioni --}}
             <a class="text-reset text-decoration-none col-12 col-md-6 col-lg-4 d-flex justify-content-center" href='{{route('user.reviews')}}'>
                 <div class="card border-0 card-service card-service-profile position-relative" style="width: 20rem; height:22rem;">
-                    <img src="{{('/media/recensione.jpg') }}" class="card-img" alt="Immagine Servizio" style="height: 100%; object-fit: cover;" style="height: 200px; object-fit: cover;">
+                    <img src="{{('/media/recensione2.jpg') }}" class="card-img" alt="Immagine Servizio" style="height: 100%; object-fit: cover;" style="height: 200px; object-fit: cover;">
                     <div class="service-overlay">
                         <h3>Recensioni</h3>
                     </div>
