@@ -9,6 +9,8 @@ Route::get("/",[PublicController::class,"home"])->name("homepage");
 
 Route::get("/auth/profile",[PublicController::class,"userProfile"])->name("user.profile");
 
+Route::get("/auth/userServices",[PublicController::class,"userServices"])->name("user.services");
+
 Route::get("/service/index",[ServiceController::class,"index"])->name("index");
 
 Route::get("/service/createService",[ServiceController::class,"create"])->name("create.service");

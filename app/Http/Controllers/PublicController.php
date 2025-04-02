@@ -24,6 +24,10 @@ class PublicController extends Controller implements HasMiddleware
         return view("auth.profile");
     }
 
+    public function userServices(){
+        return view('auth.userServices');
+    }
+
     public function contacts(){
         return view("contacts.contact");
     }

@@ -48,26 +48,6 @@
             </div>
         </div>
     </div>
-    @else 
-    <div class="container mt-5 py-3">
-        <div class="row mt-2 freelance-row" data-aos="fade-right" data-aos-duration="1000">
-            <div class="col text-center">
-                <h1>Sei un <span class="title-custom freelance-span">Freelance?</span></h1>
-            </div>
-        </div>
-        <div class="row mt-4" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="col text-center fst-italic fs-5">
-                <h5 class="lead">
-                    <a class="text-decoration-none home-link" href="{{route("register")}}">Crea qui il tuo account </a>
-                </h5>
-            </div>
-        </div>
-        <div class="row mt-3 service-row" data-aos="fade-left" data-aos-duration="1000">
-            <div class="col-12 text-center">
-                <h1>e aggiungi il tuo <span class="title-custom2 service-span">Servizio</span></h1>
-            </div>
-        </div>
-    </div>
     @endauth
 </x-layout>
 
