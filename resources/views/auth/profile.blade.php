@@ -43,30 +43,26 @@
             </div>
         </div>
     </div>
-    {{-- Card I miei servizi --}}
-    <div class="container mt-3">
-        <div class="row g-4 justify-content-evenly">
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1300">
-                <a class="text-reset text-decoration-none" href="{{route('user.services')}}">
-                    <div class="card border-0 card-service" style="width: 22rem;">
-                        <img src="{{('https://picsum.photos/300/300') }}" class="card-img-top" alt="Immagine Servizio" style="height: 200px; object-fit: cover;">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-center">I miei Servizi</h5>
-                        </div>
+    <div class="container-fluid mt-3" data-aos="fade-up" data-aos-duration="1300">
+        <div class="row justify-content-evenly" >
+            {{-- Card I miei servizi --}}
+            <a class="text-reset text-decoration-none col-12 col-md-6 col-lg-4 d-flex justify-content-center" href="{{route('user.services')}}">
+                <div class="card border-0 card-service card-service-profile position-relative" style="width: 20rem; height:22rem;">
+                    <img src="{{('/media/service-wp.jpg') }}" class="card-img" alt="Immagine Servizio" style="height: 100%; object-fit: cover;" style="height: 200px; object-fit: cover;">
+                    <div class="service-overlay">
+                        <h3>Servizi</h3>
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
             {{-- Card Le mie recensioni --}}
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1300">
-                <a class="text-reset text-decoration-none" href='{{route('user.reviews')}}'>
-                    <div class="card border-0 card-service" style="width: 22rem;">
-                        <img src="{{('https://picsum.photos/300/301') }}" class="card-img-top" alt="Immagine Servizio" style="height: 200px; object-fit: cover;">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-center">Le mie Recensioni</h5>
-                        </div>
+            <a class="text-reset text-decoration-none col-12 col-md-6 col-lg-4 d-flex justify-content-center" href='{{route('user.reviews')}}'>
+                <div class="card border-0 card-service card-service-profile position-relative" style="width: 20rem; height:22rem;">
+                    <img src="{{('/media/recensione.jpg') }}" class="card-img" alt="Immagine Servizio" style="height: 100%; object-fit: cover;" style="height: 200px; object-fit: cover;">
+                    <div class="service-overlay">
+                        <h3>Recensioni</h3>
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     </div>
     

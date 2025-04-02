@@ -3,7 +3,7 @@
     {{$service->name}}
     @endpush
     <div class="container-fluid">
-        <div class="ms-md-4">
+        <div class="ms-md-5">
             <a href="{{route('index')}}" <i class="bi bi-arrow-left-circle fs-2 mb-1 text-color"></i></a>
         </div>
         <div class="row mt-4">

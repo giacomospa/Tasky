@@ -2,6 +2,9 @@
     @push('title')
     Le mie recensioni 
     @endpush
+    <div class="ms-md-5">
+        <a href="{{route('user.profile')}}" <i class="bi bi-arrow-left-circle fs-2 mb-1 text-color"></i></a>
+    </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1000">

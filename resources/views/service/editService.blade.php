@@ -36,7 +36,7 @@
                                 <label class="form-label">Immagine Attuale</label>
                                 @if ($service->img)
                                 <div>
-                                    <img src="{{ asset('storage/' . $service->img) }}" alt="Immagine attuale" style="max-width: 200px;">
+                                    <img src="{{ asset('storage/' . $service->img) }}" alt="Immagine attuale" style="max-width: 200px; max-height:200px">
                                 </div>
                                 @endif
                             </div>

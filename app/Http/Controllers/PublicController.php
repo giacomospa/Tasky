@@ -33,7 +33,6 @@ class PublicController extends Controller implements HasMiddleware
     public function userReviews(){
         $user = Auth::user();
         $reviews = Review::where('user_id', $user->id)->paginate(6);
-        
         return view('auth.userReviews', compact('reviews'));
     }
 

@@ -62,7 +62,7 @@ class ReviewController extends Controller implements HasMiddleware
             "service_id"=>$request->service_id,
         ]);
         
-        return redirect()->route('user.profile', ['service_id' => $request->service_id])
+        return redirect()->route('user.reviews', ['service_id' => $request->service_id])
         ->with('status', 'Recensione inviata con successo!');
         
     }
