@@ -1,23 +1,42 @@
 <x-layout>
     @push('title')
-    Recensioni
+    Le mie recensioni 
     @endpush
-    <div class="container">
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center " data-aos="fade-right" data-aos-duration="1000">
-                <h1>Le nostre <span class="title-custom">Recensioni</span></h1>
-            </div>
-            <div class="col-12 d-flex justify-content-center " data-aos="fade-left" data-aos-duration="1000">
-                <h4 class="lead fst-italic">Quello che pensano i nostri clienti</h4>
-            </div>
-        </div>
-    </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center ">
-                @if(session('success'))
+            <div class="col-12 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1000">
+                <h1>
+                    Tutte le mie Recensioni</span>
+                </h1>
+            </div>
+            {{-- Messaggi di successo per recensione creata --}}
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center mt-3">
+                        @if(session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                        @endif
+                    </div>
+                </div>
+            </div>
+            {{-- AVVISI ERR/SUCC --}}
+            <div class="col-12 d-flex justify-content-center">
+                {{-- Messaggio di Successo --}}
+                @if (session('status'))
                 <div class="alert alert-success">
-                    {{ session('success') }}
+                    {{ session('status') }}
+                </div>
+                @endif
+                {{-- Messaggio di Errore --}}
+                @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
                 </div>
                 @endif
             </div>

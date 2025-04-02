@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-12 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1000">
                 <h1>
-                    Tutti i tuoi Servizi</span>
+                    Tutti i miei Servizi</span>
                 </h1>
             </div>
             {{-- Messaggi di successo per servizio creato --}}

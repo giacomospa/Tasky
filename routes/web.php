@@ -11,6 +11,8 @@ Route::get("/auth/profile",[PublicController::class,"userProfile"])->name("user.
 
 Route::get("/auth/userServices",[PublicController::class,"userServices"])->name("user.services");
 
+Route::get("/auth/userReviews",[PublicController::class,"userReviews"])->name("user.reviews");
+
 Route::get("/service/index",[ServiceController::class,"index"])->name("index");
 
 Route::get("/service/createService",[ServiceController::class,"create"])->name("create.service");
