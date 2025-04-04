@@ -1,12 +1,12 @@
 /* PALETTE*/
 :root {
     /* primary alt */
-    --primary: rgb(10, 10, 10);
+    --primary: #0a0a0a;
     --primary-op: rgba(10, 10, 10, 0.1);
-    --secondary: rgba(244, 246, 245);
-    --accent: rgb(229, 99, 153);
+    --secondary: #f4f6f5;
+    --accent: #e56399;
     --accent-op: #e56399b3;
-    --accent2: rgb(20, 148, 184);
+    --accent2: #1494b8;
     --accent2-op: rgba(20, 149, 184, 0.7);
 }
 
@@ -70,7 +70,7 @@ h1,h2,h3{
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
     border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
     transition: all 0.3s ease;
-    backdrop-filter: blur(15px); 
+    backdrop-filter: blur(8px); 
 }
 .text-tasky{
     color: var(--accent);
@@ -160,6 +160,7 @@ h1,h2,h3{
     background-size: cover;
     background-position: center;
     z-index: -1;
+    filter: blur(0px);
 }
 .bg-overlay::after {
     content: "";
@@ -168,7 +169,7 @@ h1,h2,h3{
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(180deg, rgba(12, 12, 12, 0.7), rgba(12, 12, 12, 0.7));
+    background: linear-gradient(180deg, rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8));
 }
 
 /* CARDS*/
@@ -233,7 +234,7 @@ h1,h2,h3{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Sfondo scuro semi-trasparente */
+    background: rgba(0, 0, 0, 0.4);
     color: whitesmoke;
     display: flex;
     align-items: center;
@@ -257,8 +258,8 @@ h1,h2,h3{
     font-family: "Orbitron", serif;
 }
 .pagination li a {
-    background-color: whitesmoke;
-    color: #333 !important;
+    background-color: var(--primary);
+    color: whitesmoke !important;
     border: none;
     padding: 6px 12px;
     margin: 0 4px;
@@ -269,12 +270,13 @@ h1,h2,h3{
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 .pagination li a:hover {
-    background-color: #e0e0e0;
+    background-color: var(--primary);
+    color: var(--accent);
     transform: translateY(-2px);
     box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 .pagination li.active span {
-    background-color: var(--accent2) !important;
+    background-color: var(--accent) !important;
     color: white !important;
     border: none;
     padding: 6px 12px;
@@ -284,7 +286,7 @@ h1,h2,h3{
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 .pagination li.disabled span {
-    background-color: #f8f8f8;
+    background-color: rgb(30, 30, 30);
     color: #ccc !important;
     border: none;
     padding: 6px 12px;
@@ -372,18 +374,25 @@ h1,h2,h3{
 
 
 /* FOOTER */
+.foot-shadow{
+    background: var(--primary-op); 
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px);
+    padding-top: 3%;
+}
 .border-color-foot{
     border-color: var(--accent-op) !important;
+    width: 90%;
 }
 .footer-position{
     position: relative;
     top: 80px;
 }
 .bi-hover {
-    transition: transform 0.3s ease-in-out; /* Effetto fluido */
+    transition: transform 0.3s ease-in-out; 
 }
 .bi-hover:hover {
-    transform: scale(1.2); /* Ingrandisce l'icona del 20% */
+    transform: scale(1.2); 
     color: var(--accent);
 }
 .foot-item{
@@ -392,6 +401,10 @@ h1,h2,h3{
 .foot-item:hover{
     color: var(--accent);
 }
+.copyright{
+    font-size: small;
+}
+
 
 /* MEDIA QUERY */
 
@@ -419,11 +432,14 @@ h1,h2,h3{
         background: none !important;
     }
     img{
-        width: 1000px;
-        height: 750px;
+        width: 500px;
+        height: 800px;
         background-size: cover;
     }
     .card-service-profile .service-overlay {
         opacity: 1; 
+    }
+    .copyright{
+        font-size: x-small !important;
     }
 }

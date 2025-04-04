@@ -29,7 +29,7 @@
                             @csrf
                             <div class="mb-3 w-75">
                                 <label for="exampleInputEmail1" class="form-label">Indirizzo email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="your@best.mail" name="email"> 
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="mario@rossi.mail" name="email"> 
                             </div>
                             <div class="mb-3 w-75">
                                 <label for="exampleInputPassword1" class="form-label">Password</label>

@@ -42,7 +42,7 @@ class ServiceController extends Controller implements HasMiddleware
     {
         $validated= $request->validate([
             "name"=>"required|string|max:100",
-            "description"=>"required|string|max:255",
+            "description"=>"required|string|max:800",
             "img" => "nullable|image|mimes:jpg,jpeg,png,gif",
             "price"=>"required|numeric"
         ],
@@ -89,7 +89,7 @@ class ServiceController extends Controller implements HasMiddleware
     {
         $validated= $request->validate([
             "name"=>"required|string|max:100",
-            "description"=>"required|string|max:255",
+            "description"=>"required|string|max:800",
             "img" => "nullable|image|mimes:jpg,jpeg,png,gif",
             "price"=>"required|numeric"
         ],

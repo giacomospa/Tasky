@@ -28,7 +28,7 @@
                         <form method="POST" action="{{route("register")}}">
                             @csrf
                             <div class="mb-3 w-75">
-                                <label class="form-label">Username</label>
+                                <label class="form-label">Nome e Cognome</label>
                                 <input type="text" class="form-control" placeholder="Mario Rossi" name="name">
                             </div>
                             <div class="mb-3 w-75">

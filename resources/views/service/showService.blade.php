@@ -15,7 +15,7 @@
     <div class="container py-5 mt-md-5">
         <div class="row g-0 justify-content-evenly" data-aos="zoom-in" data-aos-duration="1000">
             <div class="col-12 col-md-4">
-                <img src="{{ $service->img ? Storage::url($service->img) : asset('images/service.jpg') }}" class="w-100 h-100 object-fit-cover" alt="Immagine servizio">
+                <img src="{{ $service->img ? Storage::url($service->img) : asset('images/service.jpg') }}" class="w-100 h-75 object-fit-cover" alt="Immagine servizio">
             </div>
             <div class="col-12 col-md-4 p-2 mt-2 text-center text-md-start">
                 <h5 class="card-title fw-bold">{{$service->name}}</h5>

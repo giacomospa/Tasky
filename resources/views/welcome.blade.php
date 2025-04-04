@@ -36,7 +36,6 @@
                             <a href="{{route('create.service')}}" class="btn btn-outline-light mt-2">Inizia a vendere</a>
                         </div>
                     </div>
-                    @guest
                     <div class="carousel-item">
                         <div class="carousel-text text-center px-4">
                             <i class="bi bi-rocket-takeoff-fill fs-1 mb-3 d-block"></i>
@@ -45,7 +44,6 @@
                             <a href="{{route('register')}}" class="btn btn-outline-light mt-2">Registrati subito</a>
                         </div>
                     </div>
-                    @endguest
                 </div>
                 
                 <!-- Controlli carousel -->

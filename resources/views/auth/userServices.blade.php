@@ -2,7 +2,7 @@
     @push('title')
     I miei Servizi
     @endpush
-    <div class="ms-md-5">
+    <div class="ms-4 mb-5 ms-md-5">
         <a href="{{route('user.profile')}}" <i class="bi bi-arrow-left-circle fs-2 mb-1 text-color"></i></a>
     </div>
     <div class="container-fluid">
@@ -47,6 +47,7 @@
     </div>
     <div class="container mt-3">
         <div class="row g-4 justify-content-center">
+            @if(Auth::user()->services->count()>0)
             @foreach (Auth::user()->services as $service)
             <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1300">
                 <div class="card border-0 card-service" style="width: 18rem;">
@@ -59,6 +60,12 @@
                 </div>
             </div>
             @endforeach
+            @else
+            <div class="col-12 text-center my-5 fst-italic">
+                <h4 class="fw-lighter">Non sono presenti servizi</h4>
+                <a class="text-decoration-none text-color2" href="{{route('create.service')}}">Aggiungi Subito il tuo Servizio</a>
+            </div>
+            @endif
         </div>
     </div>
 </x-layout>
