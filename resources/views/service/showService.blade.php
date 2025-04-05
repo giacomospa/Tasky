@@ -15,7 +15,7 @@
     <div class="container py-5 mt-md-5">
         <div class="row g-0 justify-content-evenly" data-aos="zoom-in" data-aos-duration="1000">
             <div class="col-12 col-md-4">
-                <img src="{{ $service->img ? Storage::url($service->img) : asset('images/service.jpg') }}" class="w-100 h-75 object-fit-cover" alt="Immagine servizio">
+                <img src="{{ $service->img ? Storage::url($service->img) : asset('images/service.jpg') }}" class="w-100 h-100 object-fit-cover" alt="Immagine servizio">
             </div>
             <div class="col-12 col-md-4 p-2 mt-2 text-center text-md-start">
                 <h5 class="card-title fw-bold">{{$service->name}}</h5>
@@ -30,7 +30,6 @@
                 <a href="{{route("edit.service",compact("service"))}}" class="btn btn-outline-light btn-sm mt-5">Modifica</a>
                 @endif
                 @if($service->user_id === Auth::user()->id)
-                
                 <!-- Bottone per aprire la modale -->
                 <button type="button" class="btn btn-outline-light btn-sm mt-5 ms-2" data-bs-toggle="modal" data-bs-target="#deleteModal" data-service-id="{{ $service->id }}">
                     Elimina

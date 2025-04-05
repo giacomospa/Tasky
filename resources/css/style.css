@@ -19,7 +19,7 @@
 /* GENERIC*/
 body{
     overflow-x: hidden;
-    background-color: var(--primary);
+    background-color: #080D0C;
     color: var(--secondary);
     font-family: var(--font-secondary);
 }
@@ -174,18 +174,16 @@ h1,h2,h3{
 
 /* CARDS*/
 .card{
-    /* background-color: rgba(239, 239, 239); */
-    background: var(--primary-op); /* Sfondo bianco molto trasparente */
-    backdrop-filter: blur(8px); /* Crea l'effetto sfocato del vetro */
-    -webkit-backdrop-filter: blur(8px); /* Per Safari */
+    background: var(--primary-op); 
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(8px); 
     border-radius: 10px;
     color: whitesmoke;
 }
 .card-body{
-    /* background-color: rgba(239, 239, 239); */
-    background: var(--primary-op); /* Sfondo bianco molto trasparente */
-    backdrop-filter: blur(8px); /* Crea l'effetto sfocato del vetro */
-    -webkit-backdrop-filter: blur(8px); /* Per Safari */
+    background: var(--primary-op);
+    backdrop-filter: blur(6px); 
+    -webkit-backdrop-filter: blur(8px); 
     border-radius: 10px;
 }
 
@@ -215,14 +213,14 @@ h1,h2,h3{
 /* cards login/register */
 .card-auth{
     background: var(--primary-op); 
-    backdrop-filter: blur(12px); 
+    backdrop-filter: blur(6px); 
     -webkit-backdrop-filter: blur(8px);
     border-radius: 10px;
     color: whitesmoke;
 }
 .card-body-auth{
     background: var(--primary-op);
-    backdrop-filter: blur(12px); 
+    backdrop-filter: blur(6px); 
     -webkit-backdrop-filter: blur(8px);
     border-radius: 10px;
 }
@@ -247,9 +245,7 @@ h1,h2,h3{
     opacity: 1; 
 }
 
-
 /* PAGINATOR */
-/* Stile base per tutti gli elementi della paginazione */
 .pagination {
     display: flex;
     list-style: none;
@@ -432,7 +428,7 @@ h1,h2,h3{
         background: none !important;
     }
     img{
-        width: 500px;
+        width: 800px;
         height: 800px;
         background-size: cover;
     }

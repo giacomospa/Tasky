@@ -48,7 +48,7 @@
             {{-- Card I miei servizi --}}
             <a class="text-reset text-decoration-none col-12 col-md-6 col-lg-4 d-flex justify-content-center" href="{{route('user.services')}}">
                 <div class="card card-service card-service-profile position-relative" style="width: 20rem; height:22rem;">
-                    <img src="{{('/media/wp-tasky.jpg') }}" class="card-img" alt="Immagine Servizio" style="height: 100%; object-fit: cover;" style="height: 200px; object-fit: cover;">
+                    <img src="{{('/media/freelance.jpg') }}" class="card-img" alt="Immagine Servizio" style="height: 100%; object-fit: cover;" style="height: 200px; object-fit: cover;">
                     <div class="service-overlay">
                         <h3>Servizi</h3>
                     </div>

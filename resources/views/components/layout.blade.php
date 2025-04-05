@@ -21,7 +21,7 @@
 <body>
     {{-- SFONDO --}}
     <div class="bg-overlay">
-        <img src="/media/tech10.jpg" alt="immagine di sfondo">
+        <img src="/media/tech11.jpg" alt="immagine di sfondo">
     </div>
     
     {{-- Navbar compon --}}
