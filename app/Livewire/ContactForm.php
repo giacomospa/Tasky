@@ -17,6 +17,11 @@ class ContactForm extends Component
             "name"=>"required|string|max:100",
             "email"=>"required|email",
             "info"=>"required|string|max:500",
+        ],
+        [
+            'name.required'=>'Inserisci il tuo nome',
+            'email.required'=>'Inserisci la tua mail',
+            'info'=>'Lascia una breve descrizione della tua richiesta!'
         ]);
         
         $contact= Contact::create([

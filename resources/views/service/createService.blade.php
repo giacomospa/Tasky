@@ -19,7 +19,7 @@
                         <form method="POST" action="{{route("service.store")}}" enctype="multipart/form-data">
                             @csrf
                             <div class="mb-3">
-                                <label class="form-label"></label>
+                                <label class="form-label">Nome del Servizio</label>
                                 <input type="text" class="form-control" name="name" placeholder="Inserisci il nome del servizio">
                                 @error('name')
                                 <div class="text-danger">{{ $message }}</div>
@@ -37,11 +37,11 @@
                                 <label class="input-group-text" for="inputGroupFile02"></label>
                             </div>
                             <div class="mb-3">
-                                <label for="price" class="form-label"></label>
+                                <label for="price" class="form-label">Costo del servizio</label>
                                 <input type="number" class="form-control" id="price" name="price" placeholder="Inserisci il prezzo" step="0.01" min="0" required>
                             </div>
                             
-                            <button type="submit" class="btn btn-outline-light mt-3">Aggiungi</button>
+                            <button type="submit" class="btn btn-outline-light mt-3">Carica</button>
                         </form>
                     </div>
                 </div>

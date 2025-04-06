@@ -2,12 +2,12 @@
 :root {
     /* primary alt */
     --primary: #0a0a0a;
-    --primary-op: rgba(10, 10, 10, 0.1);
+    --primary-op: #0a0a0a1a;
     --secondary: #f4f6f5;
     --accent: #e56399;
     --accent-op: #e56399b3;
     --accent2: #1494b8;
-    --accent2-op: rgba(20, 149, 184, 0.7);
+    --accent2-op: #1495b8b3;
 }
 
 /* FONTS*/
@@ -176,7 +176,7 @@ h1,h2,h3{
 .card{
     background: var(--primary-op); 
     backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(6px); 
     border-radius: 10px;
     color: whitesmoke;
 }
@@ -298,7 +298,7 @@ h1,h2,h3{
 }
 .hero-content{
     position: absolute;
-    top: 180px;
+    top: 170px;
 }
 .hover-custom:hover{
     color: var(--secondary) !important;
@@ -312,7 +312,7 @@ h1,h2,h3{
 }
 @keyframes bounce{
     0% { transform: translateY(0); }
-    50% { transform: translateY(13px); }
+    50% { transform: translateY(8px); }
 }
 .title-custom{
     color: var(--accent);

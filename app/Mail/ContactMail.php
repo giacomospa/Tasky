@@ -30,7 +30,7 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from:new Address("no-reply@giacomospa.com","Tasky Founder"),
+            from:new Address("no-reply@tasky.com","Tasky Founder"),
             subject: 'Richiesta Info',
         );
     }

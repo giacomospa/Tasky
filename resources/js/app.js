@@ -17,8 +17,8 @@ particlesJS("particles-js", {
         "move": { "speed": 3 },     // Velocità di movimento
         "line_linked": {
             "enable": true,         // Connessione tra le particelle
-            "distance": 200,        // Distanza massima tra particelle per collegarsi
-            "color": "#1494b8"
+            "distance": 180,        // Distanza massima tra particelle per collegarsi
+            "color": "#f4f6f5"
         }
     }
 });
@@ -32,4 +32,5 @@ arrow.addEventListener("click",()=>{
     let chiSiamo = document.querySelector("#aboutUs");
     chiSiamo.scrollIntoView({ behavior: "smooth" });
 })
+
 
