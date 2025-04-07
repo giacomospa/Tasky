@@ -3,6 +3,7 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Models\CartItem;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -60,10 +61,10 @@ class User extends Authenticatable
         return $this->hasMany(Review::class);
     }
 
-    // Relazione N-N con servizi 
-    public function favoriteService()
+    // Relazione 1-N con CartItems
+    public function cartItems()
     {
-        return $this->belongsToMany(Service::class);
+        return $this->hasMany(CartItem::class);
     }
     
 }

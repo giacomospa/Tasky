@@ -36,7 +36,7 @@
                     </ul>
                 </li>
                 @else 
-                <li class="nav-item dropdown pe-3">
+                <li class="nav-item dropdown pe-2">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="bi bi-person-circle"></span> {{Auth::user()->name}}</a>
                     <ul class="dropdown-menu dropdown-custom">
                         <li class="px-2 p-1">
@@ -49,6 +49,11 @@
                             </form>
                         </li>
                     </ul>
+                </li>
+                <li class="d-flex flex-column align-items-center justify-content-center ms-auto">
+                    <a class="text-color" href="">
+                        <i class="bi bi-cart-fill fs-5 "></i>
+                    </a>
                 </li>
                 @endguest
             </ul>

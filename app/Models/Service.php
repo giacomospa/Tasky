@@ -25,6 +25,11 @@ class Service extends Model
         return $this->belongsToMany(User::class);
     }
 
+    // Relazione 1-N con CartItems
+    public function cartItems()
+    {
+        return $this->hasMany(CartItem::class);
+    }
 }
 
 
