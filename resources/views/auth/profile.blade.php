@@ -66,4 +66,8 @@
         </div>
     </div>
     
+    <div class="container mt-5 py-3">
+        <livewire:cart-index/>
+    </div>
+    
 </x-layout>

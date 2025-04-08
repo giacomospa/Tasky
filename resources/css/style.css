@@ -140,9 +140,11 @@ h1,h2,h3{
     background-color: transparent !important;
     color: whitesmoke !important;
 }
-.bi-cart-fill:hover{
+.bi-cart{
+    color: whitesmoke;
+}
+.bi-cart:hover{
     color: var(--accent);
-    transform: translateY(-2px);
 }
 /* Fine Navbar */
 

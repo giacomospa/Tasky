@@ -1,5 +1,5 @@
 <div>
-    <button wire:click="addtoCart" class="btn btn-outline-primary btn-sm mt-2 {{ $added ? 'btn btn-outline-success btn-sm' : 'btn btn-outline-primary' }}">
+    <button wire:click="addtoCart" class="btn btn-outline-primary btn-sm mt-2 {{ $added ? 'btn btn-outline-success btn-sm' : 'btn btn-outline-primary btn-sm' }}">
         @if($added)
         <i class="bi bi-cart-check-fill"> Aggiunto al carrello</i>
         @else
@@ -8,7 +8,7 @@
     </button>
     
     @if(session()->has('message'))
-    <div class="alert alert-success mt-2">
+    <div class="text-success fw-semibold mt-2">
         {{ session('message') }}
     </div>
     @endif  

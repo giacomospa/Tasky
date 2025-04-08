@@ -28,7 +28,7 @@
             </div>
         </div>
         
-        <div class="row justify-content-center mt-4">
+        <div class="row justify-content-center mt-4" data-aos="fade-up" data-aos-duration="1300">
             <div class="col-12 col-md-6">
                 @if(count($cartItems) > 0)
                 <div class="table-responsive">
@@ -68,7 +68,7 @@
             </div>
         </div>
         @else
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1300">
             <div class="col-10 col-md-8 card alert d-flex justify-content-center text-center">
                 <p class="text-center fs-5">Il tuo carrello è vuoto.</p>
                 <a href="{{route('index')}}" class="btn btn-outline-light mt-2 ">Inizia a fare acquisti</a>

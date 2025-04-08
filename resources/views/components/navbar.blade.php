@@ -47,7 +47,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="d-flex flex-column align-items-center justify-content-center ms-auto">
+                <li class="d-flex flex-column align-items-center justify-content-center">
                     <a class="text-reset" href="{{route('cart.index')}}">
                         {{-- <i class="bi bi-cart-fill fs-5"></i> --}}
                         <livewire:cart-icon/>
