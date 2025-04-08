@@ -47,6 +47,12 @@ h1,h2,h3{
 }
 
 /*BUTTONS*/
+.btn-outline-success{
+    border-radius: 15px !important;
+}
+.btn-outline-primary{
+    border-radius: 15px !important;
+}
 .btn-custom{
     background-color: var(--accent);
     color: whitesmoke;
@@ -57,7 +63,7 @@ h1,h2,h3{
 .btn-outline-light{
     border-color: var(--accent);
     font-size: small;
-    border-radius: 18px;
+    border-radius: 15px;
 }
 .btn-outline-light:hover{
     color: var(--accent);
@@ -133,6 +139,10 @@ h1,h2,h3{
 .btn-logout:hover{
     background-color: transparent !important;
     color: whitesmoke !important;
+}
+.bi-cart-fill:hover{
+    color: var(--accent);
+    transform: translateY(-2px);
 }
 /* Fine Navbar */
 
@@ -242,6 +252,11 @@ h1,h2,h3{
 
 .card-service-profile:hover .service-overlay {
     opacity: 1; 
+}
+
+/* Carrello */
+th ,td{
+    padding: 10px;
 }
 
 /* PAGINATOR */

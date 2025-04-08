@@ -23,8 +23,10 @@
                 <h6 class="card-title fw-semibold mt-4">€ {{$service->price}}</h6>
                 <h6 class="card-text mt-4">Servizio prodotto da <span class="fw-bold"> {{$service->producer}}</span></h6>
                 @if($service->user_id !== Auth::user()->id)
-                <a href="#" class="btn btn-outline-light mt-5 btn-sm">Aggiungi al carrello</a>
-                <a href="{{route("create.review",['service_id' => $service->id])}}" class="btn btn-outline-light btn-sm mt-5 ms-3">Valuta</a>
+                {{-- componente aggiungi al carrello --}}
+                <livewire:add-to-cart :serviceId="$service->id"/>
+                {{-- <a href="#" class="btn btn-outline-light mt-5 btn-sm">Aggiungi al Carrello</a> --}}
+                <a href="{{route("create.review",['service_id' => $service->id])}}" class="btn btn-outline-light btn-sm mt-2">Lascia una recensione</a>
                 @endif
                 @if($service->user_id === Auth::user()->id)
                 <a href="{{route("edit.service",compact("service"))}}" class="btn btn-outline-light btn-sm mt-5">Modifica</a>

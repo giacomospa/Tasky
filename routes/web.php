@@ -3,6 +3,7 @@
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\ServiceController;
+use App\Livewire\CartIndex;
 use Illuminate\Support\Facades\Route;
 
 Route::get("/",[PublicController::class,"home"])->name("homepage");
@@ -37,3 +38,4 @@ Route::delete('/review/delete/{review}',[ReviewController::class,'delete'])->nam
 
 Route::get("contacts/contact",[PublicController::class,"contacts"])->name("contacts");
 
+Route::get('/cart', CartIndex::class)->name('cart.index');

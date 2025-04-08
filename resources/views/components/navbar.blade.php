@@ -24,9 +24,6 @@
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="{{route("contacts")}}">Contattaci</a>
                 </li>
-                {{-- <div class="d-flex flex-column align-items-center justify-content-center">
-                    <i class="bi bi-person-circle"></i>
-                </div>  --}}
                 @guest
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="bi bi-person-circle"></span> My Tasky</a>
@@ -51,8 +48,8 @@
                     </ul>
                 </li>
                 <li class="d-flex flex-column align-items-center justify-content-center ms-auto">
-                    <a class="text-color" href="">
-                        <i class="bi bi-cart-fill fs-5 "></i>
+                    <a class="text-reset" href="{{route('cart.index')}}">
+                        <i class="bi bi-cart-fill fs-5"></i>
                     </a>
                 </li>
                 @endguest
