@@ -50,7 +50,7 @@
                                     </a>
                                 </td>
                                 <td>{{ Str::limit($item->service->description, 50) }}</td>
-                                <td>€{{ number_format($item->service->price, 2) }}</td>
+                                <td>€ {{ number_format($item->service->price, 2) }}</td>
                                 <td>
                                     <button wire:click="removeFromCart({{ $item->id }})" class="btn btn-sm btn-danger m-3">
                                         <i class="bi bi-trash"></i>

@@ -25,7 +25,6 @@
                 @if($service->user_id !== Auth::user()->id)
                 {{-- componente aggiungi al carrello --}}
                 <livewire:add-to-cart :serviceId="$service->id"/>
-                {{-- <a href="#" class="btn btn-outline-light mt-5 btn-sm">Aggiungi al Carrello</a> --}}
                 <a href="{{route("create.review",['service_id' => $service->id])}}" class="btn btn-outline-light btn-sm mt-2">Lascia una recensione</a>
                 @endif
                 @if($service->user_id === Auth::user()->id)

@@ -1,5 +1,4 @@
 <div>
-    
     <button wire:click="addtoCart" class="btn btn-outline-primary btn-sm mt-2 {{ $added ? 'btn btn-outline-success btn-sm' : 'btn btn-outline-primary' }}">
         @if($added)
         <i class="bi bi-cart-check-fill"> Aggiunto al carrello</i>
