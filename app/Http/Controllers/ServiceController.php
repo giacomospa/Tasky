@@ -115,7 +115,7 @@ class ServiceController extends Controller implements HasMiddleware
             "producer"=>Auth::user()->name
         ]);
         
-        return redirect()->route("user.services")->with("success","Servizio aggiornato con successo!");
+        return redirect()->route("index")->with("success","Servizio aggiornato con successo!");
         
     }
     
@@ -125,7 +125,7 @@ class ServiceController extends Controller implements HasMiddleware
     public function delete(Service $service)
     {
         $service->delete();
-        return redirect()->route("user.services")->with("success","Servizio eliminato con successo!");
+        return redirect()->route("index")->with("success","Servizio eliminato con successo!");
     }
 }
 

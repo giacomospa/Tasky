@@ -25,11 +25,15 @@
                     <a class="nav-link" aria-current="page" href="{{route("contacts")}}">Contattaci</a>
                 </li>
                 @guest
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown pe-2">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="bi bi-person-circle"></span> My Tasky</a>
                     <ul class="dropdown-menu dropdown-custom">
-                        <li><a class="dropdown-item text-white" href="{{route("login")}}">Accedi</a></li>
-                        <li><a class="dropdown-item text-white" href="{{route("register")}}">Registrati</a></li>
+                        <li class="p-1">
+                            <a class="btn btn-outline-light btn-sm w-100 text-center" href="{{route("login")}}">Accedi</a>
+                        </li>
+                        <li class="p-1">
+                            <a class="btn btn-outline-light btn-sm w-100 text-center" href="{{route("register")}}">Registrati</a>
+                        </li>
                     </ul>
                 </li>
                 @else 

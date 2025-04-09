@@ -6,8 +6,11 @@
         <div class="row">
             <div class="col-12 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1000">
                 <h1>
-                    Il mio Carrello</span>
+                    Procedi all'Acquisto</span>
                 </h1>
+            </div>
+            <div class="col-12 d-flex justify-content-center " data-aos="fade-left" data-aos-duration="1000">
+                <h4 class="lead fst-italic">Tutti i servizi nel tuo carrello</h4>
             </div>
             <div class="col-12 d-flex justify-content-center mt-3">
                 @if (session('message'))
@@ -28,7 +31,7 @@
             </div>
         </div>
         
-        <div class="row justify-content-center mt-4" data-aos="fade-up" data-aos-duration="1300">
+        <div class="row justify-content-center mt-4">
             <div class="col-12 col-md-6">
                 @if(count($cartItems) > 0)
                 <div class="table-responsive">
@@ -45,14 +48,14 @@
                             @foreach($cartItems as $item)
                             <tr>
                                 <td>
-                                    <a class="text-reset" href="{{ route('show.service', $item->service->id) }}">
+                                    <a class="text-color2 text-decoration-none" href="{{ route('show.service', $item->service->id) }}">
                                         {{ $item->service->name }}
                                     </a>
                                 </td>
                                 <td>{{ Str::limit($item->service->description, 50) }}</td>
                                 <td>€ {{ number_format($item->service->price, 2) }}</td>
                                 <td>
-                                    <button wire:click="removeFromCart({{ $item->id }})" class="btn btn-sm btn-danger m-3">
+                                    <button wire:click="removeFromCart({{ $item->id }})" class="btn btn-danger m-3">
                                         <i class="bi bi-trash"></i>
                                     </button>
                                 </td>
@@ -60,7 +63,7 @@
                             @endforeach
                         </tbody>
                     </table>
-                    <div class="justify-content-lg-between d-flex mt-4">
+                    <div class="justify-content-between d-flex mt-4">
                         <a href="{{route('index')}}" class="btn btn-outline-light btn-sm">Continua lo shopping<a>
                         <a href="#" class="btn btn-outline-success btn-sm">Procedi all'acquisto</a>
                     </div>
@@ -68,7 +71,7 @@
             </div>
         </div>
         @else
-        <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1300">
+        <div class="row justify-content-center">
             <div class="col-10 col-md-8 card alert d-flex justify-content-center text-center">
                 <p class="text-center fs-5">Il tuo carrello è vuoto.</p>
                 <a href="{{route('index')}}" class="btn btn-outline-light mt-2 ">Inizia a fare acquisti</a>

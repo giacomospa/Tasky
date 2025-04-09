@@ -431,7 +431,7 @@ th ,td{
         color: inherit;
         border-bottom: none;
     }
-    .btn-outline-light{
+    .btn-outline-light .btn-outline-success .btn-outline-primary{
         font-size: 1rem;
     }
     .border-color-foot{

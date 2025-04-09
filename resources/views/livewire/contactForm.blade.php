@@ -9,7 +9,7 @@
         </div>
     </div>
     @if(!$success)
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <div class="row justify-content-center">
             <div class="col-12 col-md-4 col-lg-6 d-flex justify-content-center mt-3">
                 <div class="card card-auth shadow-lg border-0 rounded-4" style="width: 90%;">
