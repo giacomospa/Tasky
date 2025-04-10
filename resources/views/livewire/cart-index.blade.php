@@ -1,7 +1,7 @@
 <div>
-    @push('title')
+    {{-- @push('title')
     Il mio Carrello
-    @endpush
+    @endpush --}}
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1000">

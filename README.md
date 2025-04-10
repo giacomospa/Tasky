@@ -1,80 +1,92 @@
-# Tasky
+# 🚀 Tasky
 
-## Descrizione del Progetto
-Tasky è una piattaforma per freelance del settore tech che consente di mettere in vendita i propri servizi professionali. La piattaforma offre un'esperienza completa sia per gli utenti non autenticati che per quelli autenticati, con funzionalità che vanno dall'esplorazione dei servizi alla gestione del carrello.
+![Tasky Banner](https://via.placeholder.com/800x200?text=Tasky+-+Marketplace+per+Freelance+Tech)
 
-## Tecnologie Utilizzate
-- HTML
-- CSS
-- JavaScript
-- Bootstrap
-- PHP
-- Laravel
-- Livewire
-- MySQL
-- Mailtrap (per test email)
+## 📋 Descrizione del Progetto
 
-## Funzionalità Principali
+Tasky è una piattaforma innovativa progettata per freelance del settore tech che desiderano mettere in vendita i propri servizi professionali. La piattaforma offre un'esperienza completa e intuitiva, accessibile sia agli utenti non autenticati che a quelli registrati, con funzionalità che spaziano dall'esplorazione dei servizi disponibili alla gestione completa del carrello.
 
-### Utenti Non Autenticati
-- Esplorare i servizi disponibili (anteprima)
-- Visualizzare le recensioni dei clienti
-- Compilare e inviare un form per richiedere maggiori informazioni sui servizi
+---
 
-### Utenti Autenticati
-- Accesso completo ai dettagli dei servizi (descrizione completa, prezzo, venditore)
-- Aggiungere servizi al carrello
-- Lasciare recensioni sui servizi acquistati
-- Gestire i propri servizi (modifica/eliminazione)
-- Aggiungere nuovi servizi tramite form con validazione
-- Caricare immagini personalizzate per i servizi (con supporto per file di grandi dimensioni)
+## 🛠️ Stack Tecnologico
 
-### Dashboard Profilo
-- Sezione "Servizi" con elenco dei servizi creati dall'utente
-- Sezione "Recensioni" con tutte le recensioni pubblicate dall'utente
-- Carrello con elenco degli articoli selezionati per l'acquisto
+### Frontend
+- ![HTML5](https://via.placeholder.com/15/e34c26/000000?text=+) `HTML5`
+- ![CSS3](https://via.placeholder.com/15/264de4/000000?text=+) `CSS3`
+- ![JavaScript](https://via.placeholder.com/15/f0db4f/000000?text=+) `JavaScript`
+- ![Bootstrap](https://via.placeholder.com/15/563d7c/000000?text=+) `Bootstrap 5`
 
-### Altre Caratteristiche
-- Form con validazione e messaggi personalizzati
-- Notifiche di conferma per operazioni completate con successo
-- Icona del carrello dinamica (cambia aspetto quando contiene elementi)
-- Design completamente responsive per dispositivi mobile
+### Backend
+- ![PHP](https://via.placeholder.com/15/8892bf/000000?text=+) `PHP 8+`
+- ![Laravel](https://via.placeholder.com/15/ff2d20/000000?text=+) `Laravel` 
+- ![Livewire](https://via.placeholder.com/15/fb70a9/000000?text=+) `Livewire`
 
-## Come Installare e Configurare
+### Database & Servizi
+- ![MySQL](https://via.placeholder.com/15/4479a1/000000?text=+) `MySQL`
+- ![Mailtrap](https://via.placeholder.com/15/22b8eb/000000?text=+) `Mailtrap` (per testing delle email)
 
-### Requisiti
-- PHP >= 8.0
+---
+
+## ✨ Funzionalità Principali
+
+### 👤 Per Utenti Non Autenticati
+- **Esplorazione Servizi**: navigazione e anteprima dei servizi disponibili
+- **Sistema di Recensioni**: visualizzazione delle valutazioni e feedback degli utenti
+- **Form di Contatto**: possibilità di richiedere informazioni aggiuntive sui servizi offerti
+
+### 🔐 Per Utenti Autenticati
+- **Accesso Completo**: visualizzazione di tutti i dettagli dei servizi (descrizioni complete, prezzi, info venditore)
+- **Gestione Carrello**: aggiunta e rimozione di servizi dal carrello d'acquisto
+- **Sistema di Recensioni**: possibilità di lasciare feedback sui servizi acquistati
+- **Gestione Servizi**: creazione, modifica ed eliminazione dei propri servizi offerti
+- **Upload Media**: caricamento di immagini personalizzate per i servizi (con supporto per file di grandi dimensioni)
+
+### 📊 Dashboard Personale
+- **Sezione Servizi**: panoramica completa dei servizi creati dall'utente
+- **Sezione Recensioni**: gestione di tutte le recensioni pubblicate dall'utente
+- **Carrello Interattivo**: elenco dettagliato degli articoli selezionati per l'acquisto
+
+### 🌟 Caratteristiche Aggiuntive
+- **Validazione Form**: controlli avanzati con messaggi personalizzati
+- **Sistema di Notifiche**: conferme per operazioni completate con successo
+- **Indicatori Dinamici**: icona del carrello che si aggiorna in base al contenuto
+- **Design Responsive**: ottimizzazione completa per tutti i dispositivi mobile
+
+---
+
+## ⚙️ Installazione e Configurazione
+
+### Prerequisiti
+- PHP 8.0 o superiore
 - Composer
 - MySQL
+- Node.js e NPM
 
-### Passi per l'Installazione
-1. Clonare il repository
-   ```
+### Guida all'Installazione
+
+1. **Clonazione del repository**
+   ```bash
    git clone https://github.com/tuoutente/tasky.git
    cd tasky
    ```
 
-2. Installare le dipendenze PHP
-   ```
+2. **Installazione dipendenze PHP**
+   ```bash
    composer install
    ```
 
-3. Installare Bootstrap tramite NPM (se non incluso nelle dipendenze composer)
-   ```
-   npm install bootstrap
+3. **Installazione dipendenze frontend**
+   ```bash
+   npm install
    ```
 
-4. Copiare il file di ambiente e configurarlo
-   ```
+4. **Configurazione ambiente**
+   ```bash
    cp .env.example .env
-   ```
-
-5. Generare una chiave dell'applicazione
-   ```
    php artisan key:generate
    ```
 
-6. Configurare il database nel file `.env`
+5. **Configurazione database**
    ```
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
@@ -84,36 +96,64 @@ Tasky è una piattaforma per freelance del settore tech che consente di mettere 
    DB_PASSWORD=
    ```
 
-7. Configurare Mailtrap nel file `.env` (per i test email)
+6. **Configurazione Mailtrap** (per testing email)
    ```
    MAIL_MAILER=smtp
    MAIL_HOST=smtp.mailtrap.io
    MAIL_PORT=2525
-   MAIL_USERNAME=tuousername
-   MAIL_PASSWORD=tuapassword
+   MAIL_USERNAME=your_username
+   MAIL_PASSWORD=your_password
    MAIL_ENCRYPTION=tls
    ```
 
-8. Eseguire le migrazioni e i seeder
-   ```
+7. **Preparazione database**
+   ```bash
    php artisan migrate --seed
    ```
 
-9. Compilare gli asset (se utilizzi Laravel Mix/Vite)
-   ```
+8. **Compilazione assets**
+   ```bash
    npm run dev
    ```
 
-10. Avviare il server
-    ```
-    php artisan serve
-    ```
+9. **Avvio server locale**
+   ```bash
+   php artisan serve
+   ```
 
-11. Accedere all'applicazione in `http://localhost:8000`
+10. **Accesso all'applicazione**
+    - Visita `http://localhost:8000` nel tuo browser
 
-## Screenshots
+---
 
-[Qui puoi inserire screenshot della tua applicazione per mostrare l'interfaccia e le funzionalità principali]
+## 📸 Screenshot
 
-## Informazioni sull'Autore
-Questo progetto è stato sviluppato come dimostrazione di competenze tecniche dopo la partecipazione ad Hackademy.
+<div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+    <img src="https://via.placeholder.com/400x225?text=Homepage" alt="Homepage" width="48%">
+    <img src="https://via.placeholder.com/400x225?text=Esplorazione+Servizi" alt="Esplorazione Servizi" width="48%">
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://via.placeholder.com/400x225?text=Dashboard+Utente" alt="Dashboard Utente" width="48%">
+    <img src="https://via.placeholder.com/400x225?text=Gestione+Servizi" alt="Gestione Servizi" width="48%">
+</div>
+
+---
+
+## 🚦 Stato del Progetto
+
+![Stato](https://img.shields.io/badge/Stato-In%20Sviluppo-brightgreen)
+![Versione](https://img.shields.io/badge/Versione-1.0.0-blue)
+![Test](https://img.shields.io/badge/Test-Passati-success)
+
+---
+
+## 👤 Autore
+
+Questo progetto è stato sviluppato come dimostrazione di competenze tecniche acquisite durante il percorso formativo presso Hackademy.
+
+---
+
+## 📝 Licenza
+
+Questo progetto è rilasciato sotto la licenza MIT. Vedi il file LICENSE per maggiori dettagli.
