@@ -1,6 +1,28 @@
-# 🚀 Tasky
-
-![Tasky Banner](https://via.placeholder.com/800x200?text=Tasky+-+Marketplace+per+Freelance+Tech)
+# <svg width="70" height="70" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- Gradient per effetto tech -->
+        <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ff00ff"/>
+            <stop offset="100%" stop-color="#00ffff"/>
+        </linearGradient>
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+            .tech-font {
+                font-family: 'Orbitron', sans-serif;
+                font-weight: 800;
+                font-size: 90px;
+                fill: url(#techGradient);
+                letter-spacing: 2px;
+            }
+        </style>
+    </defs>
+    
+    <g transform="translate(40, 140)">
+        <text class="tech-font" x="-9.8" y="-18">T</text>
+        <text class="tech-font" x="8.5" y="0">k</text>
+    </g>
+</svg> Tasky
 
 ## 📋 Descrizione del Progetto
 
@@ -11,19 +33,19 @@ Tasky è una piattaforma innovativa progettata per freelance del settore tech ch
 ## 🛠️ Stack Tecnologico
 
 ### Frontend
-- ![HTML5](https://via.placeholder.com/15/e34c26/000000?text=+) `HTML5`
-- ![CSS3](https://via.placeholder.com/15/264de4/000000?text=+) `CSS3`
-- ![JavaScript](https://via.placeholder.com/15/f0db4f/000000?text=+) `JavaScript`
-- ![Bootstrap](https://via.placeholder.com/15/563d7c/000000?text=+) `Bootstrap 5`
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
 
 ### Backend
-- ![PHP](https://via.placeholder.com/15/8892bf/000000?text=+) `PHP 8+`
-- ![Laravel](https://via.placeholder.com/15/ff2d20/000000?text=+) `Laravel` 
-- ![Livewire](https://via.placeholder.com/15/fb70a9/000000?text=+) `Livewire`
+- PHP 8+
+- Laravel
+- Livewire
 
 ### Database & Servizi
-- ![MySQL](https://via.placeholder.com/15/4479a1/000000?text=+) `MySQL`
-- ![Mailtrap](https://via.placeholder.com/15/22b8eb/000000?text=+) `Mailtrap` (per testing delle email)
+- MySQL
+- Mailtrap (per testing delle email)
 
 ---
 
@@ -126,34 +148,8 @@ Tasky è una piattaforma innovativa progettata per freelance del settore tech ch
 
 ---
 
-## 📸 Screenshot
-
-<div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-    <img src="https://via.placeholder.com/400x225?text=Homepage" alt="Homepage" width="48%">
-    <img src="https://via.placeholder.com/400x225?text=Esplorazione+Servizi" alt="Esplorazione Servizi" width="48%">
-</div>
-
-<div style="display: flex; justify-content: space-between;">
-    <img src="https://via.placeholder.com/400x225?text=Dashboard+Utente" alt="Dashboard Utente" width="48%">
-    <img src="https://via.placeholder.com/400x225?text=Gestione+Servizi" alt="Gestione Servizi" width="48%">
-</div>
-
----
-
-## 🚦 Stato del Progetto
-
-![Stato](https://img.shields.io/badge/Stato-In%20Sviluppo-brightgreen)
-![Versione](https://img.shields.io/badge/Versione-1.0.0-blue)
-![Test](https://img.shields.io/badge/Test-Passati-success)
-
----
 
 ## 👤 Autore
 
-Questo progetto è stato sviluppato come dimostrazione di competenze tecniche acquisite durante il percorso formativo presso Hackademy.
+Questo progetto è stato sviluppato come dimostrazione di competenze tecniche.
 
----
-
-## 📝 Licenza
-
-Questo progetto è rilasciato sotto la licenza MIT. Vedi il file LICENSE per maggiori dettagli.
